@@ -1,0 +1,5 @@
+Uuid,Void/Retire,Entity name,Name,Description,Min occurs,Max occurs,Datatype classname,Datatype config,Preferred handler classname,Handler config,_order:1000
+d4e54a2f-39bf-4b0a-8000-f2048eddbe12,,Location,Facility Operational Status,,0,1,org.openmrs.customdatatype.datatype.FreeTextDatatype,,,,
+54686249-2c26-4dd9-be90-fc7868dedd8f,,Location,Ethio Master Facility Code,,0,1,org.openmrs.customdatatype.datatype.FreeTextDatatype,,,,
+f369dbaa-3a0a-416e-97d1-cac1a230824f,,Location,Facility Type,,0,1,org.openmrs.customdatatype.datatype.FreeTextDatatype,,,,
+
