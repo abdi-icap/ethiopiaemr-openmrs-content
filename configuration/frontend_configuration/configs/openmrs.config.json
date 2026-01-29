@@ -148,6 +148,11 @@
             }
           }
         }
+      },
+      "patient-banner-tags-slot": {
+        "remove": [
+          "patient-info-sha-status"
+        ]
       }
     }
   },
@@ -230,6 +235,17 @@
         "remove": [
           "past-visits-detail-overview"
         ]
+      },
+      "extra-visit-attribute-slot": {
+        "remove": [
+          "billing-check-in-form"
+        ]
+      },
+      "visit-form-bottom-slot": {
+        "remove": [
+          "custom-visit-form-queue-fields",
+          "visit-form-queue-fields"
+        ]
       }
     },
     "showExtraVisitAttributesSlot": true,
@@ -251,9 +267,6 @@
         "vitalsAndBiometrics": "Vitals & Anthropometric"
       }
     }
-  },
-  "@openmrs/esm-patient-forms-app": {
-    "customFormsUrl": "/ws/rest/v1/kenyaemr/forms?patientUuid=${patientUuid}&visitUuid=${visitUuid}"
   },
   "@openmrs/esm-patient-tests-app": {
     "showReferenceNumberField": false,
@@ -341,7 +354,8 @@
     }
   },
   "@openmrs/esm-patient-medications-app": {
-    "maxDispenseDurationInDays": 365
+    "maxDispenseDurationInDays": 365,
+    "requireIndication": false
   },
   "@openmrs/esm-patient-notes-app": {
     "visitNoteConfig": {
@@ -708,12 +722,12 @@
       "en": {
         "address1": "Postal Address",
         "address2": "Landmark",
-        "address4": "Ward",
+        "address4": "Woreda",
         "address5": "Sub-location",
         "address6": "Location",
         "city": "Village",
-        "district": "County",
-        "state": "Sub county"
+        "district": "Region",
+        "state": "Zone"
       }
     }
   },
