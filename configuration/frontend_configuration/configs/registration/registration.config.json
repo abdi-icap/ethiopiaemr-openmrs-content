@@ -1,11 +1,12 @@
 {
-    "@kenyaemr/esm-patient-registration-app": {
+  "@kenyaemr/esm-patient-registration-app": {
     "defaultPatientIdentifierTypes": [
     ],
     "sections": [
       "demographics",
       "addressInformation",
       "otherInformation",
+      "sourceInformation",
       "relationships",
       "death"
     ],
@@ -15,6 +16,7 @@
         "name": "Address information",
         "fields": [
           "address",
+          "address.address5",
           "address.address2"
         ]
       },
@@ -28,8 +30,8 @@
         ]
       },
       {
-        "id": "relationships",
-        "name": "Relationships",
+        "id": "sourceInformation",
+        "name": "Source Information",
         "fields": [
           "nextOfKinName",
           "nextOfkinRelationsip",
@@ -55,10 +57,16 @@
         "label": "Woreda"
       },
       {
+        "id": "address.address5",
+        "type": "address",
+        "label": "Kebele"
+      },
+      {
         "id": "address.address2",
         "type": "address",
         "label": "House number"
       },
+      
       {
         "id": "telephoneContact",
         "type": "person attribute",
@@ -114,7 +122,7 @@
         "id": "nextOfKinAddress",
         "type": "person attribute",
         "uuid": "7cf22bec-d90a-46ad-9f48-035952261294",
-        "label": "Postal Address"
+        "label": "Address"
       }
     ],
     "registrationObs": {
@@ -165,5 +173,6 @@
         "required": false
       }
     }
-  }
+  }  
+
 }
