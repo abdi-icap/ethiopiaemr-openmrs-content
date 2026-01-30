@@ -1,5 +1,5 @@
 {
-  "@kenyaemr/esm-patient-registration-app": {
+  "@openmrs/esm-patient-registration-app": {
     "defaultPatientIdentifierTypes": [
     ],
     "sections": [
