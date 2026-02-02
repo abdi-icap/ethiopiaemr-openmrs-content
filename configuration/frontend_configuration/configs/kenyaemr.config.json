@@ -39,7 +39,12 @@
   },
   "@palladium-ethiopia/esm-billing-app": {
     "extensionSlots": {
-      "billing-dashboard-slot": {}
+      "billing-dashboard-slot": {},
+      "provider-banner-info-slot": {
+        "remove": [
+          "provider-banner"
+        ]
+      }
     },
     "excludedPaymentMode": [
       {
