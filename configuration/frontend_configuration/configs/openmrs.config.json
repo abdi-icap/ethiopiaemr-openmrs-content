@@ -231,7 +231,19 @@
         }
       },
       "patient-chart-encounters-dashboard-slot": {
-        "remove": ["past-visits-detail-overview"]
+        "remove": [
+          "past-visits-detail-overview"
+        ]
+      },
+      "patient-actions-slot": {
+        "remove": [
+          "start-visit-button"
+        ]
+      },
+      "extra-visit-attribute-slot": {
+        "remove": [
+          "billing-check-in-form"
+        ]
       },
       "visit-form-bottom-slot": {
         "remove": ["custom-visit-form-queue-fields", "visit-form-queue-fields"]
