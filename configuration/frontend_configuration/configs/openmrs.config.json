@@ -150,9 +150,7 @@
         }
       },
       "patient-banner-tags-slot": {
-        "remove": [
-          "patient-info-sha-status"
-        ]
+        "remove": ["patient-info-sha-status"]
       }
     }
   },
@@ -165,7 +163,8 @@
               "privileges": ["o3: View Patient Chart Flags"]
             }
           }
-        }
+        },
+        "remove": ["patient-flag"]
       },
       "patient-info-slot": {
         "configure": {
@@ -247,10 +246,7 @@
         ]
       },
       "visit-form-bottom-slot": {
-        "remove": [
-          "custom-visit-form-queue-fields",
-          "visit-form-queue-fields"
-        ]
+        "remove": ["custom-visit-form-queue-fields", "visit-form-queue-fields"]
       }
     },
     "showExtraVisitAttributesSlot": true,
@@ -471,7 +467,8 @@
           "registration-dashboard-link",
           "triage-dashboard-link",
           "mch-dashboard-link",
-          "mortuary-dashboard-link"
+          "mortuary-dashboard-link",
+          "pharmacy-homepage-dashboard-link"
         ],
         "add": [],
         "configure": {
@@ -710,7 +707,16 @@
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#183D1A",
     "Brand color #2": "#1D491F",
-    "Brand color #3": " #2C6D2F"
+    "Brand color #3": " #2C6D2F",
+    "preferredDateLocale": {
+      "en": "am",
+      "en-GB": "am"
+    },
+    "preferredCalendar": {
+      "am": "ethiopic",
+      "en": "ethiopic",
+      "en-GB": "ethiopic"
+    }
   },
   "@openmrs/esm-stock-management-app": {
     "Display conditions": {
@@ -726,9 +732,9 @@
     "Translation overrides": {
       "en": {
         "address1": "Postal Address",
-        "address2": "Landmark",
+        "address2": "House Number",
         "address4": "Woreda",
-        "address5": "Sub-location",
+        "address5": "Kebele",
         "address6": "Location",
         "city": "Village",
         "district": "Region",

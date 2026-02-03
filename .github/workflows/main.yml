@@ -24,6 +24,7 @@ jobs:
         run: mvn clean verify --batch-mode --file pom.xml
 
   publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -35,9 +36,6 @@ jobs:
         with:
           distribution: "temurin"
           java-version: "8"
-
-      - name: Build with Maven
-        run: mvn clean verify --batch-mode --file pom.xml
 
       - name: Set settings.xml
         uses: s4u/maven-settings-action@v3.0.0
