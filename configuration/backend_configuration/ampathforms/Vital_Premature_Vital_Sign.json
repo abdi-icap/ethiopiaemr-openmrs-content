@@ -1,0 +1,222 @@
+{
+  "name": "Premature Vital Sign",
+  "description": "Premature infant vital signs and reflex assessment form",
+  "version": "1.0",
+  "published": true,
+  "uuid": "c1c4bad9-a62f-468e-8e0c-0939eef73286",
+  "retired": false,
+  "encounter": "Vitals",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Vital Sign For the Premature",
+      "sections": [
+        {
+          "label": "Vitals",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Pulse Rate",
+              "type": "obs",
+              "required": false,
+              "id": "prematurePulseRate",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range for premature infants: 60-100 bpm",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+                "message": "Pulse is out of range (Normal range 60-100)"
+              }
+            },
+            {
+              "label": "Temperature",
+              "type": "obs",
+              "required": false,
+              "id": "prematureVitalTemperature",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "25",
+                "max": "43"
+              },
+              "questionInfo": "Normal range: 36.5-37.5°C",
+              "validators": [],
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 38.0 || myValue < 36.0)",
+                "message": "Temperature is out of range (Normal range 36.5-37.5)"
+              }
+            },
+            {
+              "label": "Respiratory Rate",
+              "type": "obs",
+              "required": false,
+              "id": "prematureRespiratoryRate",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range for premature infants: 30-60 breaths/min",
+              "validators": [],
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 60.5 || myValue < 29.5)",
+                "message": "Respiratory Rate is out of range (Normal range 30-60)"
+              }
+            },
+            {
+              "label": "Head Circumference",
+              "type": "obs",
+              "required": false,
+              "id": "prematureHeadCircumference",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5314AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "validators": []
+            },
+            {
+              "label": "MUAC",
+              "type": "obs",
+              "required": false,
+              "id": "prematureMUAC",
+              "questionOptions": {
+                "concept": "1343AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "number"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Newborn Reflexes",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Moro Reflex",
+              "type": "obs",
+              "required": false,
+              "id": "prematureMoroReflex",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "35425667-7586-7893-0127-890123456789",
+                "answers": [
+                  {
+                    "concept": "36536778-8697-890a-1238-901234567890",
+                    "label": "Exaggerated"
+                  },
+                  {
+                    "concept": "37647889-9708-901b-2349-012345678901",
+                    "label": "Complete"
+                  },
+                  {
+                    "concept": "38758990-0819-012c-3450-123456789012",
+                    "label": "Incomplete"
+                  },
+                  {
+                    "concept": "39869001-1920-123d-4561-234567890123",
+                    "label": "Absent"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Grasp",
+              "type": "obs",
+              "required": false,
+              "id": "prematureGrasp",
+              "questionOptions": {
+                "concept": "40970112-2031-234e-5672-345678901234",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "41081223-3142-345f-6783-456789012345",
+                    "label": "Strong"
+                  },
+                  {
+                    "concept": "42192334-4253-4560-7894-567890123456",
+                    "label": "Weak"
+                  },
+                  {
+                    "concept": "43203445-5364-5671-8905-678901234567",
+                    "label": "Absent"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Suckling",
+              "type": "obs",
+              "required": true,
+              "id": "prematureSuckling",
+              "questionOptions": {
+                "concept": "44314556-6475-6782-9016-789012345678",
+                "rendering": "radio",
+                "answers": [
+                  {
+                    "concept": "45425667-7586-7893-0127-890123456789",
+                    "label": "Sustained"
+                  },
+                  {
+                    "concept": "46536778-8697-890a-1238-901234567890",
+                    "label": "Unsustained"
+                  },
+                  {
+                    "concept": "47647889-9708-901b-2349-012345678901",
+                    "label": "Absent"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

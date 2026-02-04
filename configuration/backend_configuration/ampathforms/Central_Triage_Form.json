@@ -1,0 +1,210 @@
+{
+  "name": "Central Triage Form",
+  "description": "Central Triage Form for vital signs assessment",
+  "version": "1.0",
+  "published": true,
+  "encounter": "Triage",
+  "uuid": "ff723d59-0650-4b84-858d-c1045b690683",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider"
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Central Triage Assessment",
+      "sections": [
+        {
+          "label": "Vital Signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Pulse (60-100)",
+              "type": "obs",
+              "id": "pulse",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 60-100 bpm",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 60 || myValue > 100)",
+                "message": "Pulse is outside the normal range (60–100 bpm). Abnormal"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Blood Pressure",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Systolic (90-120)",
+              "type": "obs",
+              "id": "systolicBP",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 90-120 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 90 || myValue > 120)",
+                "message": "Systolic BP is outside the normal range (90–120 mmHg). Abnormal"
+              }
+            },
+            {
+              "label": "Diastolic (60-90)",
+              "type": "obs",
+              "id": "diastolicBP",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 60-90 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 60 || myValue > 90)",
+                "message": "Diastolic BP is outside the normal range (60–90 mmHg). Abnormal"
+              }
+            },
+            {
+              "label": "Posture",
+              "type": "obs",
+              "id": "posture",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "159633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "159630AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Sitting"
+                  },
+                  {
+                    "concept": "159629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Supine"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Additional Vital Signs",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Temperature (36.5-37.5)",
+              "type": "obs",
+              "id": "temperature",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "25",
+                "max": "43"
+              },
+              "questionInfo": "Normal range: 36.5-37.5°C",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 36.5 || myValue > 37.5)",
+                "message": "Temperature is outside the normal range (36.5–37.5°C). Abnormal"
+              }
+            },
+            {
+              "label": "RR (16-24)",
+              "type": "obs",
+              "id": "respiratoryRate",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 16-24 breaths/min",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 16 || myValue > 24)",
+                "message": "Respiratory Rate is outside the normal range (16–24 breaths/min). Abnormal"
+              }
+            },
+            {
+              "label": "SPO2 (>90)",
+              "type": "obs",
+              "id": "spo2",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0",
+                "max": "100"
+              },
+              "questionInfo": "Normal: >90%",
+              "alert": {
+                "alertWhenExpression": "myValue && myValue <= 90",
+                "message": "SPO2 is below the normal range (>90%). Abnormal"
+              }
+            },
+            {
+              "label": "Weight",
+              "type": "obs",
+              "id": "weight",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              }
+            },
+            {
+              "label": "Height",
+              "type": "obs",
+              "id": "height",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

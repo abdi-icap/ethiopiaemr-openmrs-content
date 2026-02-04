@@ -1,0 +1,454 @@
+{
+  "name": "NewBorn checklist",
+  "description": "NewBorn checklist migrated from Bahmni",
+  "version": "1.0",
+  "published": true,
+  "uuid": "83dc9c9b-4d14-431b-a1b1-26fe3006dddb",
+  "retired": false,
+  "encounter": "Consultation",
+  "pages": [
+    {
+      "label": "NewBorn checklist",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider"
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
+          "label": "Birth Information",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Type of birth",
+              "type": "obs",
+              "required": false,
+              "id": "typeOfBirth",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7a1b2c3d-4e5f-6789-0123-456789abcd01",
+                "answers": [
+                  {
+                    "concept": "159913AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Singleton"
+                  },
+                  {
+                    "concept": "159914AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Twin"
+                  },
+                  {
+                    "concept": "8b2c3d4e-5f60-7890-1234-567890abcd02",
+                    "label": "Higher Order Multiple Birth"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "APGAR score at 1 minute",
+              "type": "obs",
+              "required": false,
+              "id": "apgar1Min",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159603AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "APGAR score at 5 minutes",
+              "type": "obs",
+              "required": false,
+              "id": "apgar5Min",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159604AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "APGAR Score at 10 min",
+              "type": "obs",
+              "required": false,
+              "id": "apgar10Min",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "159605AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Stillbirth type",
+              "type": "obs",
+              "required": false,
+              "id": "stillbirthType",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "9c3d4e5f-6071-8901-2345-678901abcd03",
+                "answers": [
+                  {
+                    "concept": "0d4e5f60-7182-9012-3456-789012abcd04",
+                    "label": "Not Applicable"
+                  },
+                  {
+                    "concept": "1e5f6071-8293-0123-4567-890123abcd05",
+                    "label": "Fresh stillbirth"
+                  },
+                  {
+                    "concept": "2f607182-9304-1234-5678-901234abcd06",
+                    "label": "Macerated stillbirth"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Sex",
+              "type": "obs",
+              "required": false,
+              "id": "sex",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "3071a2b3-0415-2345-6789-012345abcd07",
+                "answers": [
+                  {
+                    "concept": "1534AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Male"
+                  },
+                  {
+                    "concept": "1535AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Female"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Birth weight",
+              "type": "obs",
+              "required": false,
+              "id": "birthWeight",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5916AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "500",
+                "max": "6000"
+              }
+            },
+            {
+              "label": "Length",
+              "type": "obs",
+              "required": false,
+              "id": "length",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Gestational Age",
+              "type": "obs",
+              "required": false,
+              "id": "gestationalAge",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7425364e-5869-7890-4567-123456789012",
+                "answers": [
+                  {
+                    "concept": "8536475f-6970-8901-5678-234567890123",
+                    "label": "Extremely Preterm GA < 28 wks"
+                  },
+                  {
+                    "concept": "9647586a-7081-9012-6789-345678901234",
+                    "label": "Very Preterm GA <32 weeks"
+                  },
+                  {
+                    "concept": "0758697b-8192-0123-7890-456789012345",
+                    "label": "Early Preterm GA 32 - 34 weeks"
+                  },
+                  {
+                    "concept": "1869708c-9203-1234-8901-567890123456",
+                    "label": "Late Preterm GA 34 -36 wk"
+                  },
+                  {
+                    "concept": "2970819d-0314-2345-9012-678901234567",
+                    "label": "Term GA = 37 weeks"
+                  },
+                  {
+                    "concept": "3081920e-1425-3456-0123-789012345678",
+                    "label": "Post Term GA >41+7 wk"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Immunizations",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "BCG Date",
+              "type": "obs",
+              "required": false,
+              "id": "bcgDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "4182b3c4-1526-3456-7890-123456abcde7"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Polio 0 Date",
+              "type": "obs",
+              "required": false,
+              "id": "polio0Date",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "5293c4d5-2637-4567-8901-234567abcde8"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Essential Newborn Care",
+              "type": "obs",
+              "required": false,
+              "id": "essentialNewbornCare",
+              "questionOptions": {
+                "rendering": "checkbox",
+                "concept": "4182b3c4-1526-3456-7890-123456abcd08",
+                "answers": [
+                  {
+                    "concept": "4293c4d5-2637-4567-8901-234567abcd08",
+                    "label": "Vit K"
+                  },
+                  {
+                    "concept": "5293c4d5-2637-4567-8901-234567abcd09",
+                    "label": "TTC"
+                  },
+                  {
+                    "concept": "6293c4d5-2637-4567-8901-234567abcd10",
+                    "label": "Skin to Skin Contact"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Post-Delivery Checklist",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Maternal bleeding controlled",
+              "type": "obs",
+              "required": false,
+              "id": "maternalBleedingControlled",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "6304d5e6-3748-5678-9012-345678abcd10",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Mother needs to start antibiotics",
+              "type": "obs",
+              "required": false,
+              "id": "motherNeedsAntibiotics",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "7415e6f7-4859-6789-0123-456789abcd11",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Baby need to start antibiotics",
+              "type": "obs",
+              "required": false,
+              "id": "babyNeedsAntibiotics",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "8526f708-5960-7890-1234-567890abcd12",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Is baby feeding well",
+              "type": "obs",
+              "required": false,
+              "id": "babyFeedingWell",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "9637081a-6071-8901-2345-678901abcd13",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "If mother HIV positive, mother is on ART and baby has neverapin syrup for 6 weeks",
+              "type": "obs",
+              "required": false,
+              "id": "hivPositiveMotherArt",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "0748192b-7182-9012-3456-789012abcd14",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Family planning options counseled",
+              "type": "obs",
+              "required": false,
+              "id": "familyPlanningCounseled",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "1859203c-8293-0123-4567-890123abcd15",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Health education offered",
+              "type": "obs",
+              "required": false,
+              "id": "healthEducationOffered",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "2960314d-9304-1234-5678-901234abcd16",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Appointment given if needed",
+              "type": "obs",
+              "required": false,
+              "id": "appointmentGiven",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "3071425e-0415-2345-6789-012345abcd17",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Midwife name",
+              "type": "encounterProvider",
+              "required": false,
+              "id": "midwifeName",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

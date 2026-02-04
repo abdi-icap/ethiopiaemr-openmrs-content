@@ -1,14 +1,58 @@
 {
   "name": "Triage Emergency",
   "description": "Emergency Triage Form Sheet from Bahmni",
-  "version": "2.0",
+  "version": "1",
   "published": true,
   "uuid": "4ff622f8-212e-4f0f-b6a6-1aa19d776ffb",
   "retired": false,
   "encounter": "Triage",
   "pages": [
     {
-      "label": "Patient Summary",
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Patient Information",
       "sections": [
         {
           "label": "Patient Information",
@@ -18,11 +62,18 @@
               "label": "Date and Time of arrival",
               "type": "obs",
               "id": "arrivalDateTime",
+              "required": "true",
               "datePickerFormat": "both",
               "questionOptions": {
                 "rendering": "datetime",
                 "concept": "159622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": ""
               }
@@ -30,18 +81,59 @@
             {
               "label": "Date and Time of triage",
               "type": "obs",
+              "required": "true",
               "id": "triageDateTime",
               "datePickerFormat": "both",
               "questionOptions": {
                 "rendering": "datetime",
                 "concept": "71c2d3e4-f5a6-7890-1234-567890abcdef"
               },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": ""
               }
+            },
+            {
+              "label": "Time of Triage in Ethiopian Time (include whether it is day or night)",
+              "type": "obs",
+              "required": false,
+              "id": "idtimeoftraigeethiopiantime",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rows": "3",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "160632"
+                  },
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "AMPATH",
+                    "value": "1915"
+                  },
+                  {
+                    "relationship": "NARROWER-THAN",
+                    "type": "LOINC",
+                    "value": "48767-8"
+                  }
+                ]
+              },
+              "validators": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Triage Category",
+      "sections": [
         {
           "label": "Triage Category",
           "isExpanded": "true",
@@ -96,7 +188,7 @@
                 "rendering": "radio",
                 "answers": [
                   {
-                    "concept": "bb2c3d4e-5f60-7890-1234-56789abcdef0",
+                    "concept": "160026AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Ambulatory"
                   },
                   {
@@ -132,7 +224,12 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Contact Person & Mode of Arrival",
+      "sections": [
         {
           "label": "Contact Person & Mode of Arrival",
           "isExpanded": "true",
@@ -237,7 +334,12 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Triage Addis Ababa",
+      "sections": [
         {
           "label": "Triage Addis Ababa",
           "isExpanded": "true",
@@ -251,7 +353,7 @@
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== 'f2344556-6778-4560-8904-6789012345f0'"
               }
             },
             {
@@ -263,11 +365,16 @@
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== 'f2344556-6778-4560-8904-6789012345f0'"
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Outside Addis Ababa",
+      "sections": [
         {
           "label": "Outside Addis Ababa",
           "isExpanded": "true",
@@ -281,7 +388,7 @@
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -293,7 +400,7 @@
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -315,7 +422,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -353,7 +460,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "referralStatus !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "referralStatus !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -365,7 +472,7 @@
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "sourceOfReferral !== 'cf677889-9001-7893-1237-2345678a0123' || isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "sourceOfReferral !== 'cf677889-9001-7893-1237-2345678a0123' || isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -387,7 +494,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -409,7 +516,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             },
             {
@@ -422,11 +529,16 @@
                 "rows": "5"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(preHospitalCare) || preHospitalCare !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty(originHome) || originHome !== '14566778-8990-6782-0126-89012345f012'"
+                "hideWhenExpression": "isEmpty(preHospitalCare) || preHospitalCare !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty(originHome) || originHome !== '03455667-7889-5671-9015-789012345f01'"
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Complaints and History",
+      "sections": [
         {
           "label": "Complaints and History",
           "isExpanded": "true",
@@ -434,6 +546,7 @@
             {
               "label": "Chief Complaint",
               "type": "obs",
+              "required": "true",
               "id": "cOmplaIntField",
               "questionOptions": {
                 "concept": "5219AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -532,6 +645,12 @@
                 "rendering": "date",
                 "concept": "164428AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
               "hide": {
                 "hideWhenExpression": ""
               }
@@ -541,7 +660,7 @@
               "type": "obs",
               "id": "complaintDuration",
               "questionOptions": {
-                "concept": "159368AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "1731AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
                 "min": "0"
               },
@@ -552,12 +671,17 @@
               "type": "obs",
               "id": "selfInflicted",
               "questionOptions": {
-                "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rendering": "textarea"
+                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "textarea" 
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Vital Signs and Triage Score",
+      "sections": [
         {
           "label": "Record Vital Sign and Triage Score",
           "isExpanded": "true",
@@ -568,40 +692,32 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Systolic (90 - 120)",
+              "label": "Systolic BP (90-120)",
               "type": "obs",
               "id": "systolicBP",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "300"
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && (myValue < 90 || myValue > 120)",
-                  "message": "Systolic BP is abnormal (normal range: 90-120 mmHg)"
-                }
-              ]
+              "questionInfo": "Normal range: 90-120 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 90 || myValue > 120)",
+                "message": "Systolic BP is outside the normal range (90–120 mmHg). You can still save."
+              }
             },
             {
-              "label": "Diastolic (60 - 90)",
+              "label": "Diastolic BP (60-90)",
               "type": "obs",
               "id": "diastolicBP",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "200"
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && (myValue < 60 || myValue > 90)",
-                  "message": "Diastolic BP is abnormal (normal range: 60-90 mmHg)"
-                }
-              ]
+              "questionInfo": "Normal range: 60-90 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 60 || myValue > 90)",
+                "message": "Diastolic BP is outside the normal range (60–90 mmHg). You can still save."
+              }
             },
             {
               "label": "Posture",
@@ -609,90 +725,74 @@
               "id": "posture",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "0a314b5c-6475-6782-901c-def012345678",
+                "concept": "159633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "answers": [
                   {
-                    "concept": "0b425c6d-7586-7893-012d-ef0123456789",
+                    "concept": "159630AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Sitting"
                   },
                   {
-                    "concept": "0c536d7e-8697-890a-123e-f01234567890",
+                    "concept": "159629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                     "label": "Supine"
                   }
                 ]
               }
             },
             {
-              "label": "RR (16 - 24)",
+              "label": "Respiratory Rate (16-24)",
               "type": "obs",
               "id": "respiratoryRate",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "100"
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && (myValue < 16 || myValue > 24)",
-                  "message": "Respiratory Rate is abnormal (normal range: 16-24 breaths/min)"
-                }
-              ]
+              "questionInfo": "Normal range: 16-24 breaths/min",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 16 || myValue > 24)",
+                "message": "Respiratory Rate is outside the normal range (16–24 breaths/min). You can still save."
+              }
             },
             {
-              "label": "SPO2 (> 90)",
+              "label": "SPO2 (>90%)",
               "type": "obs",
               "id": "spo2",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "100"
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && myValue <= 90",
-                  "message": "SPO2 is abnormal (normal: >90%)"
-                }
-              ]
+              "questionInfo": "Normal: >90%",
+              "alert": {
+                "alertWhenExpression": "myValue && myValue <= 90",
+                "message": "SPO2 is below the normal range (>90%). You can still save."
+              }
             },
             {
-              "label": "Heart Rate",
+              "label": "Heart Rate (60-100)",
               "type": "obs",
               "id": "heartRate",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "0",
-                "max": "300"
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && (myValue < 60 || myValue > 100)",
-                  "message": "Heart Rate is abnormal (normal range: 60-100 bpm)"
-                }
-              ]
+              "questionInfo": "Normal range: 60-100 bpm",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 60 || myValue > 100)",
+                "message": "Heart Rate is outside the normal range (60–100 bpm). You can still save."
+              }
             },
             {
-              "label": "Temperature (36.5 - 37.5)",
+              "label": "Temperature (36.5-37.5°C)",
               "type": "obs",
               "id": "temperature",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "min": "30",
-                "max": "45"
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
-              "validators": [
-                {
-                  "type": "js_expression",
-                  "failsWhenExpression": "myValue && (myValue < 36.5 || myValue > 37.5)",
-                  "message": "Temperature is abnormal (normal range: 36.5-37.5°C)"
-                }
-              ]
+              "questionInfo": "Normal range: 36.5-37.5°C",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue < 36.5 || myValue > 37.5)",
+                "message": "Temperature is outside the normal range (36.5–37.5°C). You can still save."
+              }
             },
             {
               "label": "Random Blood Sugar",
@@ -752,7 +852,7 @@
                   },
                   {
                     "concept": "159508AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "UNRESPONSIVE"
+                    "label": "Unresponsive"
                   }
                 ]
               }
@@ -783,20 +883,25 @@
               "id": "painScore",
               "questionOptions": {
                 "rendering": "number",
-                "concept": "160287AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "160287AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "min": "0",
                 "max": "10"
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Triage History",
+      "sections": [
         {
           "label": "Triage History",
           "isExpanded": "true",
           "questions": [
             {
               "label": "Red",
-              "required": "true",
+              "required": "false",
               "id": "idRed",
               "type": "obs",
               "questionOptions": {
@@ -828,7 +933,7 @@
             },
             {
               "label": "Orange",
-              "required": "true",
+              "required": "false",
               "id": "idOrange",
               "type": "obs",
               "questionOptions": {
@@ -848,7 +953,7 @@
                     "label": "Acute Focal Neurologic Symptoms"
                   },
                   {
-                    "concept": "47455667-7889-5671-9015-b123456789a1",
+                    "concept": "58122334-4556-2348-6782-c789abcdef01",
                     "label": "Psychosis/Aggression"
                   },
                   {
@@ -908,7 +1013,7 @@
             },
             {
               "label": "Yellow",
-              "required": "true",
+              "required": "false",
               "id": "idYellow",
               "type": "obs",
               "questionOptions": {
@@ -976,7 +1081,7 @@
             },
             {
               "label": "Green",
-              "required": "true",
+              "required": "false",
               "id": "idGreen",
               "type": "obs",
               "questionOptions": {
@@ -992,7 +1097,7 @@
             },
             {
               "label": "Black",
-              "required": "true",
+              "required": "false",
               "id": "idBlack",
               "type": "obs",
               "questionOptions": {
@@ -1036,7 +1141,7 @@
               "label": "RAT",
               "type": "obs",
               "id": "rat",
-              "required": "true",
+              "required": "false",
               "questionOptions": {
                 "rendering": "radio",
                 "concept": "7e1f2a3b-4c5d-6789-0123-456789abcdef",
@@ -1063,7 +1168,12 @@
               "id": "idAllergies"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "label": "Intervention and Medication Given",
+      "sections": [
         {
           "label": "Intervention and Medication Given",
           "isExpanded": "true",
@@ -1089,20 +1199,10 @@
               "id": "idIntervDone"
             },
             {
-              "label": "Triage Officer Name:",
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "textarea",
-                "concept": "6e344556-6778-4560-8904-2d345678abcd",
-                "rows": "2"
-              },
-              "id": "triageOfficerName"
-            },
-            {
               "label": "Triage Score Result:",
               "type": "obs",
               "questionOptions": {
-                "rendering": "textarea",
+                "rendering": "Number",
                 "concept": "6f455667-7889-5671-9015-3e45678abcde",
                 "rows": "2"
               },
@@ -1145,6 +1245,5 @@
     }
   ],
   "processor": "EncounterFormProcessor",
-  "referencedForms": [],
-  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378"
+  "referencedForms": []
 }

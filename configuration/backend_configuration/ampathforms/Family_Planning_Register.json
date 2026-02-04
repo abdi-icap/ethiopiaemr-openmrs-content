@@ -8,6 +8,50 @@
   "encounter": "Consultation",
   "pages": [
     {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "label": "Family Planning Register",
       "sections": [
         {
@@ -15,43 +59,23 @@
           "isExpanded": "true",
           "questions": [
             {
-              "label": "New acceptor",
+              "label": "User Type",
               "type": "obs",
               "required": false,
-              "id": "newAcceptor",
+              "id": "userType",
               "questionOptions": {
                 "rendering": "radio",
+                "concept": "1e6f7081-9203-1234-ef01-56789012345a",
                 "answers": [
                   {
-                    "label": "Yes",
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    "concept": "763a1d59-f3b5-492a-ba63-f0a1562ce441",
+                    "label": "New"
                   },
                   {
-                    "label": "No",
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    "concept": "6bee05c0-d9e0-4c5f-9a8a-3cbad70fdc9d",
+                    "label": "Existing"
                   }
-                ],
-                "concept": "163157AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
-            },
-            {
-              "label": "Repeat acceptor",
-              "type": "obs",
-              "required": false,
-              "id": "repeatAcceptor",
-              "questionOptions": {
-                "rendering": "radio",
-                "answers": [
-                  {
-                    "label": "Yes",
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  },
-                  {
-                    "label": "No",
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                  }
-                ],
-                "concept": "163158AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                ]
               }
             },
             {
@@ -61,7 +85,7 @@
               "id": "registrationDate",
               "questionOptions": {
                 "rendering": "date",
-                "concept": "MISSING_FP_REGISTRATION_DATE"
+                "concept": "160753AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               }
             },
             {
@@ -98,7 +122,7 @@
               "required": false,
               "id": "educationalStatus",
               "questionOptions": {
-                "rendering": "text",
+                "rendering": "select",
                 "concept": "1712AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               }
             }
@@ -148,7 +172,7 @@
                 "concept": "164401AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(hivTestOffered) || !hivTestOffered"
+                "hideWhenExpression": "isEmpty(hivTestOffered) || hivTestOffered !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -171,7 +195,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(hivTestPerformed) || !hivTestPerformed"
+                "hideWhenExpression": "isEmpty(hivTestPerformed) || hivTestPerformed !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             },
             {
@@ -214,7 +238,7 @@
                 "concept": "164849AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(hivTestResult) || hivTestResult !== '7acfafa4-f19b-485e-97a7-c9e002dbe37a'"
+                "hideWhenExpression": "isEmpty(hivTestResult) || hivTestResult !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
               }
             }
           ]
@@ -230,7 +254,7 @@
               "id": "targetPopulationCategory",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "164930AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "4f8a2b1c-3d5e-4567-8901-234567890abc",
                 "answers": [
                   {
                     "label": "Female commercial Sex Workers",
@@ -242,7 +266,7 @@
                   },
                   {
                     "label": "Mobile workers/daily laborers",
-                    "concept": "MISSING_MOBILE_WORKERS"
+                    "concept": "7e9f1a2b-4c6d-5678-9012-345678901de0"
                   },
                   {
                     "label": "Prisoners",
@@ -258,15 +282,15 @@
                   },
                   {
                     "label": "Partner of PLHIV",
-                    "concept": "MISSING_PARTNER_PLHIV"
+                    "concept": "8f0a2b3c-5d7e-6789-0123-456789012e0a"
                   },
                   {
                     "label": "Other MARPS",
-                    "concept": "MISSING_OTHER_MARPS"
+                    "concept": "9a1b3c4d-6e8f-7890-1234-567890123f0a"
                   },
                   {
                     "label": "General Population",
-                    "concept": "164928AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                    "concept": "0b2c4d5e-7f9a-8901-2345-678901234a0b"
                   }
                 ]
               }
@@ -314,7 +338,7 @@
                     "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
                   }
                 ],
-                "concept": "164178AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e"
               }
             },
             {
@@ -325,16 +349,6 @@
               "questionOptions": {
                 "rendering": "number",
                 "concept": "164812AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-              }
-            },
-            {
-              "label": "Visit date",
-              "type": "obs",
-              "required": true,
-              "id": "visitDate",
-              "questionOptions": {
-                "rendering": "date",
-                "concept": "164093AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               }
             },
             {
@@ -418,18 +432,8 @@
               "id": "remark",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "165095AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rows": "4"
-              }
-            },
-            {
-              "label": "Service Provider Name",
-              "type": "obs",
-              "required": false,
-              "id": "serviceProviderName",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
               }
             }
           ]
@@ -437,5 +441,6 @@
       ]
     }
   ],
-  "encounterType": "e22e39fd-7db2-45e7-80f1-60fa0d5a4378"
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
 }

@@ -1,0 +1,628 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,Data class,Data type,Answers,Members,_version:1,_order:1
+f1e179cc-050a-45ff-bad6-f58621b662e9,,,Blood transfusion date and time,Transfusion DateTime,Date and time when blood transfusion was initiated or recorded,Question,Datetime,,,1,1
+472ee5f7-1b21-4514-bc67-0ac769d1292a,,,Blood transfusion starting time,Transfusion start,Date and time when blood transfusion administration started,Question,Datetime,,,1,1
+2625e69d-cf2b-4608-b3c6-c6b080d73e26,,,Blood transfusion ending time,Transfusion end,Date and time when blood transfusion administration ended,Question,Datetime,,,1,1
+61b85edc-f031-42dd-ba1a-7aa47f71e2f1,,,Blood unit number,Blood unit no.,Unique identification number of blood unit used for transfusion,Question,Text,,,1,1
+1194fec8-4093-4479-bee5-f791012f544b,,,Hemoglobin hematocrit result notes,Hgb/Hct notes,Clinical notes documenting hemoglobin and hematocrit test results for transfusion assessment,Question,Text,,,1,1
+7fd27265-efcc-46e6-b580-e34d3476774e,,,Blood group and Rh of patient,Patient BG/Rh,Blood group and Rh factor of patient receiving transfusion,Question,Text,,,1,1
+752baba8-0370-4c2f-845e-481c7730c3d5,,,Blood group and Rh of blood given,Blood BG/Rh,Blood group and Rh factor of blood unit administered to patient,Question,Text,,,1,1
+01736152-fe5b-427b-b93a-e583b785f6c9,,,Cross match number,Cross match no.,Laboratory cross match test identification number for blood compatibility testing,Question,Numeric,,,1,1
+a4202fef-46d3-408e-b4ae-92617cdc8c19,,,Transfusion reaction observed,Reaction seen,Clinical documentation of any adverse reactions or complications observed during or after blood transfusion,Question,Text,,,1,1
+c6a8797b-241b-4471-9b9f-96b838c6337e,,,Blood transfusion administered by,Given by,Name or identification of healthcare provider who administered the blood transfusion,Question,Text,,,1,1
+54d6e7f8-9a0b-1c2d-3e4f-567890123456,,,Edema one plus,Edema +,One plus edema grading for malnutrition assessment,Finding,N/A,,,1,1
+65e7f890-ab1c-2d3e-4f56-78901234567a,,,Edema two plus,Edema ++,Two plus edema grading for malnutrition assessment,Finding,N/A,,,1,1
+76f89012-bc3d-4e5f-6789-012345678abc,,,Edema three plus,Edema +++,Three plus edema grading for malnutrition assessment,Finding,N/A,,,1,1
+9c4d5e6f-7081-9012-cdef-345678901777,,,Visible severe wasting present,Severe wasting,Observation of visible severe wasting in child indicating severe acute malnutrition,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+ad5e6f70-8192-0123-def4-56789012345a,,,MUAC less than 11 centimeters,MUAC <11cm,Mid-upper arm circumference measurement less than 11 centimeters indicating severe acute malnutrition,Finding,N/A,,,1,1
+be6f7081-9203-1234-ef56-789012345abc,,,MUAC 11 to 12 centimeters,MUAC 11-12cm,Mid-upper arm circumference measurement between 11 and 12 centimeters indicating moderate acute malnutrition,Finding,N/A,,,1,1
+cf708192-a314-2345-f678-90123456bcde,,,MUAC 12 centimeters or greater,MUAC ≥12cm,Mid-upper arm circumference measurement 12 centimeters or greater indicating normal nutritional status,Finding,N/A,,,1,1
+1f2e3d4c-5b6a-7980-cdef-123456789abc,,,Appetite test passed,Appetite passed,Child successfully completed appetite test indicating good feeding ability,Finding,N/A,,,1,1
+2e3d4c5b-6a79-8091-def1-23456789abcd,,,Appetite test failed,Appetite failed,Child failed appetite test indicating feeding difficulties or poor appetite,Finding,N/A,,,1,1
+e192a314-c536-4567-1890-23456defabcd,,,Breastfeeding in the last 6 months,Breastfed last 6mo,Whether child was breastfed within the last 6 months period,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+03b4c536-e758-6789-3012-456fabcdef01,,,Other problems present,Other problems,Presence of other problems not covered in standard childhood illness assessment,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+11829304-b526-3456-789a-bcdef0123456,,,Inability to drink or breastfeed,Cannot drink/feed,Child is unable to drink or breastfeed indicating severe illness,Symptom/Finding,N/A,,,1,1
+12930415-c637-4567-890b-cdef01234567,,,Convulsion history,Convulsion history,Child has history of convulsions or seizures,Symptom/Finding,N/A,,,1,1
+13a41526-d748-5678-901c-def012345678,,,Convulsing now,Convulsing now,Child is currently having convulsions or seizures,Symptom/Finding,N/A,,,1,1
+14b52637-e859-6789-012d-ef0123456789,,,Lethargic or unconscious,Lethargic/unconscious,Child is lethargic or unconscious indicating severe illness,Symptom/Finding,N/A,,,1,1
+6b7c8d9e-0f1a-2b3c-4d5e-6f7890123456,,,Cough or difficulty breathing present,Cough or difficulty breathing,Question asking whether child has cough or difficulty breathing symptoms,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+a1b2c3d4-e5f6-7890-1234-56789abcdef0,,,Diarrhea present,Diarrhea present,Question asking whether child has diarrhea symptoms,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1aa8c9d0-4e1f-234a-678b-456789012345,,,Blood in stool present,Blood in stool,Child has blood in stool indicating severe diarrhea or dysentery,Symptom/Finding,N/A,,,1,1
+1bb9d0e1-5f2a-345b-789c-567890123456,,,Restless or irritable,Restless/irritable,Child is restless or irritable indicating dehydration or discomfort,Symptom/Finding,N/A,,,1,1
+1cc0e1f2-6a3b-456c-890d-678901234567,,,Drinks eagerly,Drinks eagerly,Child drinks eagerly indicating thirst or mild dehydration,Symptom/Finding,N/A,,,1,1
+1dd1f2a3-7b4c-567d-901e-789012345678,,,Sunken eyes present,Sunken eyes,Child has sunken eyes indicating dehydration,Symptom/Finding,N/A,,,1,1
+1ee2f3a4-8c5d-678e-012f-890123456789,,,Turgor or skin pinch assessment,Turgor/skin pinch,Text field for documenting turgor or skin pinch assessment results in dehydration evaluation,Question,Text,,,1,1
+1ff3a4b5-9d6e-789f-123a-901234567890,,,Fever detected by history,By history,Fever reported by caregiver through patient history,Symptom/Finding,N/A,,,1,1
+2aa4b5c6-0e7f-890a-234b-012345678901,,,Fever detected by touch,By touch/feel,Fever detected by touching or feeling child's body temperature,Symptom/Finding,N/A,,,1,1
+3bb5c6d7-1f8a-901b-345c-123456789012,,,Fever detected by thermometer,By thermometer,Fever detected by measuring temperature with thermometer,Symptom/Finding,N/A,,,1,1
+0a1b2c3d-4e5f-6789-0123-456789abcdef,,,Malaria rapid diagnostic test result,Malaria RDT,Question asking for malaria rapid diagnostic test result,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+5dd7e8f9-3b0c-123d-567e-345678901234,,,Plasmodium falciparum detected,Falciparum,Plasmodium falciparum malaria parasite detected on microscopy,Symptom/Finding,N/A,,,1,1
+6ee8f9a0-4c1d-234e-678f-456789012345,,,Plasmodium vivax detected,Vivax,Plasmodium vivax malaria parasite detected on microscopy,Symptom/Finding,N/A,,,1,1
+0f607182-9304-1234-5678-9abcdef01234,,,Ear problem present,Ear problem,Question asking whether child has ear problems,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+42f34832-df1c-4585-948f-7e8d9681173f,,,Feeding problem present,Feeding problem,Question asking whether child has feeding problems,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+04d5e6f7-0819-012c-3456-789abcd01111,,,Specify Feeding problem details,Feeding details,Free text field to specify details about feeding problems in child,Question,Text,,,1,1
+cc177191-2c36-4f22-89a0-9cfba86ad2fb,,,Specify other problems details,Other problems details,Free text field to specify details about other problems in child,Question,Text,,,1,1
+05e6f708-1920-123d-4567-89abcd002222,,,Clinical classification notes,Classification,Free text field for clinical classification and assessment notes,Question,Text,,,1,1
+47f8091a-2b92-a12d-7456-89def0123456,,,Treatment outcome assessment,Outcome,Assessment of treatment outcome for childhood illness management,Question,Coded,1898AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1257AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;162678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+5809a2b3-3ca3-b23e-8567-9ef012345678,,,General diagnosis notes,Diagnosis notes,Free text field for general diagnosis and clinical notes documentation,Question,Text,,,1,1
+7aa9b0c1-5d2e-345f-789a-567890123456,,,Stiff neck,Stiff neck,Child has stiff neck indicating possible meningitis or severe infection,Symptom/Finding,N/A,,,1,1
+8bb0c1d2-6e3f-456a-890b-678901234567,,,Bulged fontanel less than 1 year,Bulged fontanel <1yr,Child under 1 year has bulged fontanel indicating increased intracranial pressure,Symptom/Finding,N/A,,,1,1
+9cc1d2e3-7f4a-567b-901c-789012345678,,,General rash with cough,General rash cough,Child has general rash accompanied by cough symptoms,Symptom/Finding,N/A,,,1,1
+0dd2e3f4-8a5b-678c-012d-890123456789,,,Cough present,Cough,Child has cough symptoms,Symptom/Finding,N/A,,,1,1
+1ee3f4a5-9b6c-789d-123e-901234567890,,,Red eyes present,Red eyes,Child has red eyes indicating possible conjunctivitis or infection,Symptom/Finding,N/A,,,1,1
+2ff4a5b6-0c7d-890e-234f-012345678901,,,Runny nose present,Runny nose,Child has runny nose indicating upper respiratory symptoms,Symptom/Finding,N/A,,,1,1
+3aa5b6c7-1d8e-901f-345a-123456789012,,,Mouth ulcer deep or extensive,Mouth ulcer severe,Child has deep or extensive mouth ulcers indicating severe oral pathology,Symptom/Finding,N/A,,,1,1
+4aa6b7c8-2d9e-012f-456a-345678901234,,,Ear pain present,Ear pain,Child has ear pain indicating possible ear infection or inflammation,Symptom/Finding,N/A,,,1,1
+5bb7c8d9-3e0f-123a-567b-456789012345,,,Pus draining from ear,Pus draining,Child has pus draining from ear indicating active ear infection,Symptom/Finding,N/A,,,1,1
+6cc8d9e0-4f1a-234b-678c-567890123456,,,Tender swelling behind ear,Tender swelling,Child has tender swelling behind the ear indicating possible mastoiditis,Symptom/Finding,N/A,,,1,1
+7dd9e0f1-5a2b-345c-789d-678901234567,,,Severe pallor present,Severe pallor,Child has severe pallor indicating severe anemia,Symptom/Finding,N/A,,,1,1
+8ee0f1a2-6b3c-456d-890e-789012345678,,,Some pallor present,Some pallor,Child has some pallor indicating mild to moderate anemia,Symptom/Finding,N/A,,,1,1
+9ff1a2b3-7c4d-567e-901f-890123456789,,,No pallor present,No pallor,Child has no pallor indicating normal hemoglobin levels,Symptom/Finding,N/A,,,1,1
+0aa2b3c4-8d5e-678f-012a-901234567890,,,Specify other problems text,Other problems text,Free text field to specify details about other problems in child assessment,Question,Text,,,1,1
+17e8596b-1b8c-901d-345f-123456789012,,,Stridor present,Stridor,Child has stridor indicating upper airway obstruction,Symptom/Finding,N/A,,,1,1
+16d7485a-0a7b-890c-234f-012345678901,,,Chest indrawing present,Chest indrawing,Child has chest indrawing indicating respiratory distress,Symptom/Finding,N/A,,,1,1
+4d34d70b-7224-4c34-a7bf-5a95c3841c9a,,,Immunization up-to-date (childhood illness),Up-to-Date,Child immunization status is up-to-date for age,Finding,N/A,,,1,1
+d51f480f-6df9-4910-b790-9d06434b0b2b,,,Immunization not up-to-date (childhood illness),Not Up-to-Date,Child immunization status is not up-to-date for age,Finding,N/A,,,1,1
+88c89230-d2c4-454f-9214-7bc6fe103a78,,,Treatment outcome improved (childhood illness),Improved,Child condition improved after treatment for childhood illness,Finding,N/A,,,1,1
+ed585ad2-bd12-4f27-afe1-773701997176,,,Treatment outcome same (childhood illness),Same,Child condition unchanged after treatment for childhood illness,Finding,N/A,,,1,1
+e4d4ae0b-df2b-468c-b690-8793fcc50a13,,,Treatment outcome worse (childhood illness),Worse,Child condition worsened after treatment for childhood illness,Finding,N/A,,,1,1
+b2c3d4e5-f607-8901-2345-6789abcdef33,,,Fever present in Child Assessment,Fever present,Question asking if fever is present in child,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1f96f08e-741e-4d00-a82c-dd4c1a5874d2,,,Medication documentation notes,Medication notes,Free text field for documenting medication prescribed or given to child,Question,Text,,,1,1
+85822a93-0801-4787-8ec3-4f3d04e87e35,,,Fever present in TB screening,Fever,Fever as symptom in tuberculosis screening,Finding,N/A,,,1,1
+4c2a0bc4-6280-4695-b8fe-f44e1417e5ee,,,Night sweats present,Night sweats,Night sweats as symptom in tuberculosis screening,Finding,N/A,,,1,1
+cb3719c5-239c-475a-ae8f-88c9b996bfa1,,,Close contact with TB patient,Close contact TB,History of close contact with known TB patient,Finding,N/A,,,1,1
+d746e6f4-1620-467e-9053-0f7e96f46912,,,Contact with MDR TB patient,MDR TB contact,History of contact with MDR TB patient,Finding,N/A,,,1,1
+82228be2-e916-4428-9aef-478c28a76844,,,Swelling or discharging wound,Swelling wound,Swelling or discharging wound in tuberculosis screening,Finding,N/A,,,1,1
+4148ad41-be02-443d-b748-ff95f2f84eeb,,,Signs of acute malnutrition MAM SAM,Acute malnutrition,Signs of acute malnutrition MAM or SAM in tuberculosis screening,Finding,N/A,,,1,1
+599fe157-a7f7-4c22-b270-9ce25aa31296,,,Immunization completed,Completed,Child immunization is completed,Finding,N/A,,,1,1
+ae23be45-1581-40eb-9aad-771e58729802,,,Immunization up-to-date,Up-to-Date,Child immunization is up-to-date for age,Finding,N/A,,,1,1
+256813f5-9123-42cb-a456-d51db0f0d8b3,,,Immunization not up-to-date,Not Up-to-Date,Child immunization is not up-to-date for age,Finding,N/A,,,1,1
+d57ad0b9-5f5f-4887-a407-3d882b753cf3,,,Immunization defaulted,Defaulted,Child immunization has defaulted,Finding,N/A,,,1,1
+34c6a35c-beb9-4d79-99ec-aa880fb067e5,,,Immunization not started,Not Started,Child immunization has not been started,Finding,N/A,,,1,1
+a1b2c3d4-e5f6-7890-1234-567890abcd01,,,Post mortal finding,Post mortal finding,Clinical findings observed after death during post-mortem examination,Question,Text,,,1,1
+b2c3d4e5-f607-8901-2345-678901abcd02,,,Other place of death specify,Other place specify,Specification of other place of death when other option is selected,Question,Text,,,1,1
+d4e5f607-8192-0123-4567-890123abcd04,,,Other governmental,Other governmental,Other type of governmental facility ownership not specified in main categories,Finding,N/A,,,1,1
+e5f60718-9203-1234-5678-901234abcd05,,,Declaration date,Declaration date,Date when death declaration was made by the declaring person,Question,Date,,,1,1
+f6071829-0314-2345-6789-012345abcd06,,,Notification form issued by,Issued by,Name or title of person who issued the death notification form,Question,Text,,,1,1
+0718293a-1425-3456-7890-123456abcd07,,,Full name,Full name,Full name of person declaring death for death notification,Question,Text,,,1,1
+1829304b-2536-4567-8901-234567abcd08,,,Doctor who confirm death,Doctor confirm death,Name or identification of doctor who confirmed the death,Question,Text,,,1,1
+293a415b-3647-5678-9012-345678abcd09,,,Date and time of death,Death DateTime,Exact date and time when patient death occurred for death notification,Question,Datetime,,,1,1
+3a4b526c-4758-6789-0123-456789abcd0a,,,Immediate cause of death,Immediate cause,Direct cause that immediately led to death in the cause of death chain,Question,Text,,,1,1
+4b5c637d-5869-789a-1234-567890abcd0b,,,Intermediate cause of death,Intermediate cause,Intermediate condition in the cause of death chain between immediate and underlying causes,Question,Text,,,1,1
+5c6d748e-697a-890b-2345-678901abcd0c,,,Primary cause of death,Primary COD,Root cause or disease that initiated the sequence of events leading to death,Question,Text,,,1,1
+6d7e859f-7a8b-901c-3456-789012abcd0d,,,Final diagnosis (text),Final diagnosis,Final clinical diagnosis documented for death notification,Question,Text,,,1,1
+7e8f960a-8b9c-012d-4567-890123abcd0e,,,Professional qualification,Professional qualification,Professional qualification or job title of person declaring death,Question,Text,,,1,1
+8f9a0b1c-2d3e-4567-8901-234567890123,,,Patient care status at death,Care status at death,Patient care status or setting at the time of death (inpatient or outpatient),Question,Coded,160542AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5485AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+9a0b1c2d-3e4f-5678-9012-345678901234,,,Important physical examination findings,Physical exam findings,Important physical examination findings documented for death notification,Question,Text,,,1,1
+d616d6d4-2548-4b68-99e7-f3c85fa96328,,,Address,Address,Patient address information for emergency department triage,Question,Text,,,1,1
+ebfd541a-b095-4d9f-aac6-9777ac42759d,,,Time of arrival to ED,Arrival time ED,Date and time when patient arrived at emergency department,Question,Datetime,,,1,1
+48a0a9be-b477-44cf-b370-8d407dffd152,,,Ambulance details,Ambulance,Free text field for ambulance details and transport information,Question,Text,,,1,1
+6745ba51-c881-403c-a294-a6fa014f3a8a,,,Carried,Carried,Patient was carried to the hospital by others,Finding,N/A,,,1,1
+3d449cb3-a97a-431c-9b4e-fd5ca6cf7114,,,TBGH,TBGH,Patient referred from TBGH facility,Finding,N/A,,,1,1
+2f607182-9304-1234-5678-901234abcd05,,,ED Chief complaint,Chief complaint,Patient's primary complaint or reason for emergency department visit,Question,Text,,,1,1
+f33d1aeb-9033-4405-bdca-6f7f534663f9,,,Gravida text,Gravida,Number of pregnancies including current pregnancy,Question,Text,,,1,1
+610f3f1d-e5a0-42ea-bb4e-c816fe3cfee2,,,Para text,Para,Number of births after 20 weeks gestation,Question,Text,,,1,1
+775f3a78-1c78-40af-84cd-4ca7f4a7d7aa,,,Abortion history,Abortion,History of abortions or pregnancy losses before 20 weeks,Question,Text,,,1,1
+af229755-0bee-4bb8-975a-7bacd689e388,,,LNMP,LNMP,Last normal menstrual period date,Question,Date,,,1,1
+7415e6f7-4859-6789-0123-456789abcd0a,,,Ultrasound date,Ultrasound,Date of last ultrasound examination,Question,Date,,,1,1
+8526f708-5960-7890-1234-567890abcd0b,,,Gestational age,Gestational age,Gestational age in weeks and days,Question,Text,,,1,1
+0748192b-7182-9012-3456-789012abcd0d,,,Term gestation,Term,Pregnancy at term gestation 37-42 weeks,Finding,N/A,,,1,1
+1859203c-8293-0123-4567-890123abcd0e,,,Pre-term gestation,Pre-term,Pregnancy before 37 weeks gestation,Finding,N/A,,,1,1
+2960314d-9304-1234-5678-901234abcd0f,,,Post-term gestation,Post-term,Pregnancy after 42 weeks gestation,Finding,N/A,,,1,1
+3071425e-0415-2345-6789-012345abcd10,,,ED Vaginal bleeding assessment,Vaginal bleeding,Question asking about presence of vaginal bleeding,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4182536f-1526-3456-7890-123456abcd11,,,Seizure history,Seizure,Question asking about seizure activity or history,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+5293647a-2637-4567-8901-234567abcd12,,,Per vaginal examination,PV,Per vaginal examination findings,Question,Text,,,1,1
+6304758b-3748-5678-9012-345678abcd13,,,Cervix examination,Cervix,Cervical examination findings,Question,Text,,,1,1
+8526970d-5960-7890-1234-567890abcd15,,,Intact membranes,Intact,Amniotic membranes are intact,Finding,N/A,,,1,1
+9637081e-6071-8901-2345-678901abcd16,,,PROM,PROM,Premature rupture of membranes,Finding,N/A,,,1,1
+0748192f-7182-9012-3456-789012abcd17,,,AROM,AROM,Artificial rupture of membranes,Finding,N/A,,,1,1
+1859203a-8293-0123-4567-890123abcd18,,,Duration in hours,Hours,Duration in hours for membrane rupture or other timed events,Question,Numeric,,,1,1
+2960314b-9304-1234-5678-901234abcd19,,,Presentation,Presentation,Fetal presentation or clinical presentation details,Question,Text,,,1,1
+3071425c-0415-2345-6789-012345abcd1a,,,FHB,FHB,Fetal heart beat assessment and findings,Question,Text,,,1,1
+4182536d-1526-3456-7890-123456abcd1b,,,Investigation plan,Investigation plan,Plan for diagnostic investigations and tests,Question,Text,,,1,1
+6304758f-3748-5678-9012-345678abcd1d,,,Admit to LW,Admit LW,Admit patient to labor ward,Finding,N/A,,,1,1
+7415869a-4859-6789-0123-456789abcd1e,,,Send to GW,Send GW,Send patient to gynecology ward,Finding,N/A,,,1,1
+8526970b-5960-7890-1234-567890abcd1f,,,ANC,ANC,Refer to antenatal care clinic,Finding,N/A,,,1,1
+9637081c-6071-8901-2345-678901abcd20,,,ED Discharge to home,Home,Discharge patient home,Finding,N/A,,,1,1
+0748192d-7182-9012-3456-789012abcd21,,,Reevaluate,Reevaluate,Reevaluate patient after specified time,Finding,N/A,,,1,1
+1859203e-8293-0123-4567-890123abcd22,,,Reevaluate hours,Reevaluate hours,Number of hours after which to reevaluate patient,Question,Numeric,,,1,1
+71c2d3e4-f5a6-7890-1234-567890abcdef,,,Date and Time of triage,Triage DateTime,Date and time when patient triage was performed,Question,Datetime,,,1,1
+9c3d4e5f-6071-8901-2345-6789abcdef01,,,Any trauma to the patient within the past 48 hours,Trauma 48hrs,Question asking if patient experienced any trauma within the past 48 hours,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1e5f6071-8293-0123-4567-89abcdef0123,,,Triage Day arrival,Day,Patient arrived during daytime hours,Finding,N/A,,,1,1
+2f6071a2-9304-1234-5678-9abcdef01234,,,Triage Night arrival,Night,Patient arrived during nighttime hours,Finding,N/A,,,1,1
+cc3d4e5f-6071-8901-2345-6789abcdef01,,,Patient Non-Ambulatory,Non-Ambulatory Patient Status,Patient cannot walk or move independently,Finding,N/A,,,1,1
+ee5f6071-8293-0123-4567-89abcdef0123,,,Acute condition present,Acute present,Patient has acute medical condition,Finding,N/A,,,1,1
+ff607182-9304-1234-5678-9abcdef01234,,,Chronic condition present,Chronic present,Patient has chronic medical condition,Finding,N/A,,,1,1
+6e74d8e2-dd0e-4747-a973-ae0dd2e820ca,,,Triage Ambulance arrival,Ambulance (2),Patient arrived by ambulance for emergency transport,Finding,N/A,,,1,1
+74bc6d7e-8f90-6789-012d-ef0123456789,,,Taxi,Taxi,Patient arrived by taxi,Finding,N/A,,,1,1
+85cd7e8f-9001-789a-123e-f01234567890,,,Private Car,Private Car,Patient arrived by private car,Finding,N/A,,,1,1
+96de8f90-0112-890b-234f-012345678901,,,Public Car,Public Car,Patient arrived by public car,Finding,N/A,,,1,1
+4f694879-6290-411b-8140-b6562715854e,,,Triage Arrived walking,Walking,Patient arrived on foot by walking,Finding,N/A,,,1,1
+b8f00112-2334-012d-4560-234567890123,,,Public Taxi,Public Taxi,Patient arrived by public taxi,Finding,N/A,,,1,1
+d0122334-4556-234f-6782-456789012345,,,Other Specify Mode of Arrival,Other Arrival Specify,Specification of other mode of arrival when other is selected,Question,Text,,,1,1
+f2344556-6778-4560-8904-6789012345f0,,,Addis Ababa,Addis Ababa,Patient is from Addis Ababa city,Finding,N/A,,,1,1
+03455667-7889-5671-9015-789012345f01,,,Outside Addis Ababa,Outside Addis Ababa,Patient is from outside Addis Ababa city,Finding,N/A,,,1,1
+14566778-8990-6782-0126-89012345f012,,,Subcity,Subcity,Subcity location within Addis Ababa for patient address,Question,Text,,,1,1
+25677889-9001-7893-1237-9012345f0123,,,Woreda,Woreda,Woreda location for patient address,Question,Text,,,1,1
+36788990-0112-8904-2348-012345f01234,,,Region,Region,Regional location for patients from outside Addis Ababa,Question,Text,,,1,1
+47899001-1223-9015-3459-12345f012345,,,Zone,Zone,Zone location for patients from outside Addis Ababa,Question,Text,,,1,1
+58900112-2334-0126-4560-2345f0123456,,,Was the patient referred,Referral Status,Question asking if patient was referred from another facility,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+7a122334-4556-2348-6782-45f012345678,,,Addis Ababa Government Hospital,Addis Ababa Govt Hospital,Patient referred from Addis Ababa Government Hospital,Misc,N/A,,,1,1
+8b233445-5667-3459-7893-5f0123456789,,,Addis Ababa Private Hospital,Addis Ababa Private Hospital,Patient referred from Addis Ababa Private Hospital,Misc,N/A,,,1,1
+9c344556-6778-4560-8904-f012345678a0,,,Regional Hospital,Regional Hospital,Patient referred from Regional Hospital,Misc,N/A,,,1,1
+ad455667-7889-5671-9015-012345678a01,,,Health Center,Health Center,Patient referred from Health Center,Misc,N/A,,,1,1
+be566778-8990-6782-0126-12345678a012,,,Police Prison,Police/Prison,Patient referred from Police or Prison facility,Misc,N/A,,,1,1
+cf677889-9001-7893-1237-2345678a0123,,,Other Referral Source,Other Source,Patient referred from other source not listed,Misc,N/A,,,1,1
+d0788990-0112-8904-2348-345678a01234,,,Other source of referral specify,Other Referral Specify,Specification of other referral source when other is selected,Question,Text,,,1,1
+e1899001-1223-9015-3459-45678a012345,,,Communication made to referral hospital,Referral Communication,Question asking if communication was made to the referral hospital,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+f2900112-2334-0126-4560-5678a0123456,,,Pre-hospital care First aid given,Pre-hospital Care,Question asking if pre-hospital care or first aid was given,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+03011223-3445-1237-5671-678a01234567,,,Specify pre-hospital care First aid given,Pre-hospital Care Specify,Specification of pre-hospital care or first aid given,Question,Text,,,1,1
+58566778-8990-6782-0126-c23456789a12,,,Central cyanosis observed,Central cyanosis,Blue discoloration of central areas indicating poor oxygenation,Finding,N/A,,,1,1
+69677889-9001-7893-1237-d3456789a123,,,Tearless crying observed,Tearless crying,Crying without tears indicating dehydration,Finding,N/A,,,1,1
+8b899001-1223-9015-3459-f56789a12345,,,Severe vomiting observed,Severe vomiting,Severe persistent vomiting,Finding,N/A,,,1,1
+9c900112-2334-0126-4560-056789a12345,,,Skin turgor decreased,Decreased turgor,Decreased skin elasticity indicating dehydration,Finding,N/A,,,1,1
+ad011223-3445-1237-5671-16789a123456,,,Joint dislocation present,Joint dislocation,Dislocation of joint or bone,Finding,N/A,,,1,1
+be122334-4556-2348-6782-2789a1234567,,,Muscle cramps,Muscle cramps,Involuntary muscle contractions causing pain,Finding,N/A,,,1,1
+cf233445-5667-3459-7893-389a12345678,,,Airway obstruction present,Airway obstruction,Blockage of respiratory airway,Finding,N/A,,,1,1
+d0344556-6778-4560-8904-49a123456789,,,Purpura observed,Purpura,Purple-colored rash indicating bleeding under skin,Finding,N/A,,,1,1
+e1455667-7889-5671-9015-5a123456789a,,,Other Specify Complaints,Other Complaints Specify,Specification of other complaints when other is selected,Question,Text,,,1,1
+be469783-7a7b-4e02-8088-ef4c5e56afb0,,,Triage Seizure presentation,Seizure (2),Patient experiencing seizure activity,Finding,N/A,,,1,1
+36900112-2334-0126-4560-a56789abcdef,,,Burn Face Inhalation,Burn Face/Inhalation,Burn injury to face or inhalation injury,Finding,N/A,,,1,1
+2515ab83-19ce-499a-94d6-ca832c6d08f0,,,Hypoglycemia less than 50mg per dL,Hypoglycemia <50mg/dL,Blood glucose level below 50mg/dL indicating severe hypoglycemia,Finding,N/A,,,1,1
+435e13d7-b208-4c57-be03-535109803155,,,Reduced Consciousness Triage,Reduced Consciousness,Patient with reduced level of consciousness requiring urgent attention,Finding,N/A,,,1,1
+d2e56e53-c517-4a78-8bd8-20deed1a5e8b,,,Seizure Post-ictal Period Triage,Seizure Post-ictal,Patient experiencing seizure or in post-ictal period,Finding,N/A,,,1,1
+236dcf87-a1a9-44db-9c8e-d7059aab154a,,,Acute Focal Neurologic Symptoms Triage,Acute Focal Neuro,Patient with acute focal neurological symptoms,Finding,N/A,,,1,1
+c072c914-631b-4632-88a9-4ad09fe5de84,,,Uncontrolled Hemorrhage Triage,Uncontrolled Hemorrhage,Patient with uncontrolled bleeding requiring immediate intervention,Finding,N/A,,,1,1
+425f6fc0-efad-4751-9fc9-76478fddbf4d,,,Threatened Limb Triage,Threatened Limb,Patient with limb-threatening injury or condition,Finding,N/A,,,1,1
+45997a6f-d7e3-41ac-bfbe-fa149ccd49b9,,,Coughing Vomiting Blood Triage,Coughing/Vomiting Blood,Patient coughing up blood or vomiting blood,Finding,N/A,,,1,1
+b6c7e832-6ac3-42fa-9886-eb3213e90a89,,,Poisoning Drug Overdose Triage,Poisoning/Overdose,Patient with suspected poisoning or drug overdose,Finding,N/A,,,1,1
+9213a5f1-3a62-414d-a622-a4114fed96bd,,,Suspected closed fracture Triage,Suspected Closed Fracture,Patient with suspected closed fracture requiring triage assessment,Finding,N/A,,,1,1
+4035722f-8d3c-49a6-9139-ae29e10fe57c,,,Suspected minor joint dislocation Triage,Suspected Minor Dislocation,Patient with suspected minor joint dislocation requiring triage assessment,Finding,N/A,,,1,1
+abe9b7fa-ec3c-4ec5-a401-2a019a280dca,,,Abdominal pain acute Triage,Abdominal Pain Acute,Patient with acute abdominal pain requiring triage assessment,Finding,N/A,,,1,1
+39747d43-00bb-46eb-9551-790981786d14,,,Vomiting ongoing no blood Triage,Vomiting Ongoing No Blood,Patient with ongoing vomiting without blood requiring triage assessment,Finding,N/A,,,1,1
+4ad696eb-4426-4cf7-948b-48ef70a7749d,,,Sudden collapse,Sudden Collapse,Patient experiencing sudden collapse or loss of consciousness,Finding,N/A,,,1,1
+c9520082-199d-42f7-9d97-8fe1c5760aff,,,Triage Stab wound injury,Stab Wound,Patient with stab wound injury,Finding,N/A,,,1,1
+61587f91-8a80-4359-a91c-8264be4ac3d1,,,Other Medical complaint,Other Medical,Other medical complaint not specified in the list,Finding,N/A,,,1,1
+dab2cb8a-f42f-46a6-9a98-dbe9d0a8b21a,,,Other Surgical complaint,Other Surgical,Other surgical complaint not specified in the list,Finding,N/A,,,1,1
+58122334-4556-2348-6782-c789abcdef01,,,Psychosis Aggregation,Psychosis/Aggression,Mental health condition with psychosis or aggressive behavior,Finding,N/A,,,1,1
+59233445-5667-3459-7893-d89abcdef012,,,Burn over 20 percent electric chemical circumferential,Burn >20% Electric Chemical,Severe burn over 20% body surface area or electric/chemical/circumferential burn,Finding,N/A,,,1,1
+5a344556-6778-4560-8904-e9abcdef0123,,,Pregnant abdominal pelvic trauma pain,Pregnant Trauma Pain,Pregnant patient with abdominal or pelvic trauma or pain,Finding,N/A,,,1,1
+5b455667-7889-5671-9015-fabcdef01234,,,Open fracture present,Open fracture,Open fracture with bone protruding through skin,Finding,N/A,,,1,1
+5c566778-8990-6782-0126-0bcdef012345,,,Major Dislocation not finger toes,Major Dislocation,Major joint dislocation excluding fingers and toes,Finding,N/A,,,1,1
+5d677889-9001-7893-1237-1cdef0123456,,,Diabetic Patient with Ketonuria,Diabetic Ketonuria,Diabetic patient with ketones in urine,Finding,N/A,,,1,1
+5e788990-0112-8904-2348-2def01234567,,,SOB or Chest Pain acute,SOB Chest Pain Acute,Acute shortness of breath or chest pain,Finding,N/A,,,1,1
+61011223-3445-1237-5671-5012345678a0,,,Burn other,Burn Other,Other types of burns not classified as severe,Finding,N/A,,,1,1
+62122334-4556-2348-6782-612345678a01,,,Pregnancy Vaginal Bleeding,Pregnancy Bleeding,Pregnant patient with vaginal bleeding,Finding,N/A,,,1,1
+63233445-5667-3459-7893-72345678a012,,,Pregnancy non-abdominal non-pelvic Trauma,Pregnancy Non-abd Trauma,Pregnant patient with trauma not involving abdomen or pelvis,Finding,N/A,,,1,1
+64344556-6778-4560-8904-8345678a0123,,,DM Glucose over 17 without Ketonuria,DM Glu >17 No Ketones,Diabetic patient with glucose over 17 without ketonuria,Finding,N/A,,,1,1
+65455667-7889-5671-9015-945678a01234,,,Diabetic RBS over 350 without ketonuria,Diabetic RBS >350,Diabetic patient with random blood sugar over 350 without ketonuria,Finding,N/A,,,1,1
+67677889-9001-7893-1237-b678a0123456,,,All Other,All Other,All other conditions not classified in higher triage categories,Finding,N/A,,,1,1
+68788990-0112-8904-2348-c78a01234567,,,Black Triage Category,Black Triage,Deceased or expectant triage category,Question,Coded,142934AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+69899001-1223-9015-3459-d8a012345678,,,Specify Triage Color,Specify Triage,Additional specification for triage color category,Question,Text,,,1,1
+6a900112-2334-0126-4560-ea0123456789,,,Past Medical Illnesses,Past Medical History,Patient's past medical illnesses and conditions,Question,Text,,,1,1
+6b011223-3445-1237-5671-fa012345678a,,,Allergies,Allergies,Patient's known allergies and adverse reactions,Question,Text,,,1,1
+6c122334-4556-2348-6782-0b12345678ab,,,Medication Given,Medication Given,Medications administered to patient during triage,Question,Text,,,1,1
+6d233445-5667-3459-7893-1c2345678abc,,,Intervention Done,Intervention Done,Medical interventions performed during triage,Question,Text,,,1,1
+6f455667-7889-5671-9015-3e45678abcde,,,Triage Score Result,Triage Score,Numerical score result from triage assessment,Question,Numeric,,,1,1
+8f2a3b4c-5d6e-7890-1234-567890abcdef,,,RAT eligible,RAT eligible,Patient is eligible for rapid assessment triage protocol,Finding,N/A,,,1,1
+9a3b4c5d-6e7f-8901-2345-678901abcdef,,,Non Eligible,Non Eligible,Patient is not eligible for rapid assessment triage protocol,Finding,N/A,,,1,1
+9c4d5e6f-7081-9012-cdef-345678901999,,,Units Provided,Units Provided,Number or quantity of family planning units provided to patient,Question,Text,,,1,1
+3081a2b3-1425-3456-0123-789012345abc,,,Family Planning Method Discontinued,FP Method Discontinued,Question asking which family planning method was discontinued or removed from patient,Question,Coded,5279AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5278AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5275AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5276AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;190AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;780AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5277AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;159524AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;78796AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1175AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1472AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;907AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1489AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1359AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;136452AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;159837AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;160570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;136163AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;162332AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;159589AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;164814AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;164813AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+6bee05c0-d9e0-4c5f-9a8a-3cbad70fdc9d,,,Continuing FP client,Continuing client,Patient is an existing family planning user,Finding,N/A,,,1,1
+763a1d59-f3b5-492a-ba63-f0a1562ce441,,,New FP client,New client,Patient is a new family planning user,Finding,N/A,,,1,1
+7e9f1a2b-4c6d-5678-9012-345678901de0,,,FP Mobile Workers Daily Laborers,Mobile Workers,Mobile workers and daily laborers target population for family planning services,Finding,N/A,,,1,1
+8f0a2b3c-5d7e-6789-0123-456789012e0a,,,FP Partner of PLHIV,Partner of PLHIV,Partner of person living with HIV target population for family planning services,Finding,N/A,,,1,1
+9a1b3c4d-6e8f-7890-1234-567890123f0a,,,FP Other MARPS,Other MARPS,Other most at risk populations for family planning services,Finding,N/A,,,1,1
+0b2c4d5e-7f9a-8901-2345-678901234a0b,,,FP General Population,General Population,General population target category for family planning services,Finding,N/A,,,1,1
+1a2b3c4d-5e6f-7890-abcd-ef1234567890,,,Chief Complaint for Triage Notes,CC Notes,Additional notes and details about the patient's chief complaint,Question,Text,,,1,1
+2b3c4d5e-6f70-8901-bcde-f23456789012,,,Past medical and surgical history,Past med/surg hx,Detailed medical and surgical history for chronic outpatient care,Question,Text,,,1,1
+4d5e6f70-8192-0123-def4-56789012345a,,,Environmental allergy reported,Environ allergy,Allergic reactions to environmental factors such as pollen dust or chemicals,Finding,N/A,,,1,1
+5e6f7081-9203-1234-ef56-789012345abc,,,Allergy documentation notes,Allergy notes,Additional notes and details about patient allergies,Question,Text,,,1,1
+6f708192-a314-2345-f678-90123456bcde,,,General appearance assessment,Gen appearance,Clinical assessment of patient's general appearance and overall condition,Question,Text,,,1,1
+70819203-b425-3456-0789-123456cdefab,,,HEENT examination findings,HEENT findings,Head Eyes Ears Nose and Throat examination findings,Question,Text,,,1,1
+8192a314-c536-4567-1890-23456defabcd,,,Lymphoglandular system examination,Lymphatic exam,Examination findings of lymph nodes and glandular systems,Question,Text,,,1,1
+92a3b425-d647-5678-2901-3456efabcdef,,,Respiratory system examination,Respiratory exam,Clinical examination findings of the respiratory system,Question,Text,,,1,1
+a3b4c536-e758-6789-3012-456fabcdef01,,,Physical Exam Cardiovascular,CVS,Clinical examination findings of the cardiovascular system,Question,Text,,,1,1
+b4c5d647-f869-789a-4123-567abcdef012,,,Abdominal and pelvic examination,Abdo/pelvic exam,Clinical examination findings of the abdomen and pelvic region,Question,Text,,,1,1
+e2b668ac-7efb-4344-8ea8-b7cb70976652,,,Genitourinary examination,GU exam,Clinical examination findings of the genitourinary system,Question,Text,,,1,1
+b07461a8-5b2f-4f1e-84a3-f94a0c5585a9,,,Musculoskeletal examination,MSK exam,Clinical examination findings of the musculoskeletal system,Question,Text,,,1,1
+91656b31-9ff8-4a99-a37e-55841170bea9,,,Skin and integument examination,Skin exam,Clinical examination findings of the integumentary system including skin,Question,Text,,,1,1
+f809a2b3-3ca3-b23e-8567-9ef012345678,,,Neurological examination,Neuro exam,Clinical examination findings of the nervous system,Question,Text,,,1,1
+09a2b3c4-4db4-c34f-9678-0ef123456789,,,Clinical history notes,History notes,Clinical notes about patient's medical history and present illness,Question,Text,,,1,1
+0a1b2c3d-5e6f-7890-abcd-ef1234567890,,,Presenting complaints set,Presenting Complaints Set,Container set for presenting complaints obsGroup in history and physical examination,Question,Coded,,,1,1
+e3f4a5b6-7c8d-9e0f-1a2b-3c4d5e6f7a8b,,,Smoking History,Smoking History,Question asking about patient's history of smoking tobacco products,Question,Boolean,,,1,1
+d2e3f4a5-6b7c-8d9e-0f1a-2b3c4d5e6f7a,,,Image Video File,Image/Video,Stores uploaded image or video file for a clinical encounter,Question,Complex,,,1,1
+7a1b2c3d-4e5f-6789-0123-456789abcde0,,,Child date of birth,Child DOB,Date of birth for infant immunization record,Question,Date,,,1,1
+8b2c3d4e-5f60-7890-1234-567890abcde1,,,Name of Mother,Mother name,Name of infant's mother for immunization record,Question,Text,,,1,1
+9c3d4e5f-6071-8901-2345-678901abcde2,,,Name of father,Father name,Name of infant's father for immunization record,Question,Text,,,1,1
+1e5f6071-8293-0123-4567-890123abcde4,,,Kebele,Kebele,Administrative division kebele for patient address,Question,Text,,,1,1
+2f607182-9304-1234-5678-901234abcde5,,,Gott,Gott,Administrative division gott for patient address,Question,Text,,,2,1
+3071a2b3-0415-2345-6789-012345abcde6,,,House No,House number,House number for patient address,Question,Text,,,2,1
+4182b3c4-1526-3456-7890-123456abcde7,,,BCG Date,BCG vaccination date,Date when BCG vaccination was administered,Question,Date,,,1,1
+5293c4d5-2637-4567-8901-234567abcde8,,,OPV 0 Date,OPV 0 date,Date when OPV 0 vaccination was administered,Question,Date,,,1,1
+6304d5e6-3748-5678-9012-345678abcde9,,,OPV1 Date,OPV1 date,Date when OPV1 vaccination was administered,Question,Date,,,1,1
+7415e6f7-4859-6789-0123-456789abcdea,,,OPV 2 Date,OPV 2 date,Date when OPV 2 vaccination was administered,Question,Date,,,1,1
+8526f708-5960-7890-1234-567890abcdeb,,,OPV 3 Date,OPV 3 date,Date when OPV 3 vaccination was administered,Question,Date,,,1,1
+9637081a-6071-8901-2345-678901abcdec,,,IPV Date,IPV vaccination date,Date when IPV vaccination was administered,Question,Date,,,1,1
+0748192b-7182-9012-3456-789012abcded,,,DPT-HepB-Hib 1 Date,DPT-HepB-Hib 1 date,Date when DPT-HepB-Hib 1 vaccination was administered,Question,Date,,,1,1
+1859203c-8293-0123-4567-890123abcdee,,,DPT-HepB-Hib 2 Date,DPT-HepB-Hib 2 date,Date when DPT-HepB-Hib 2 vaccination was administered,Question,Date,,,1,1
+2960314d-9304-1234-5678-901234abcdef,,,DPT-HepB-Hib 3 Date,DPT-HepB-Hib 3 date,Date when DPT-HepB-Hib 3 vaccination was administered,Question,Date,,,1,1
+3071425e-0415-2345-6789-012345abcdf0,,,Other Vaccine,Other vaccine,Other vaccine administered not listed in standard schedule,Question,Text,,,1,1
+4182536f-1526-3456-7890-123456abcdf1,,,PCV 1 Date,PCV 1 date,Date when PCV 1 vaccination was administered,Question,Date,,,1,1
+5293647a-2637-4567-8901-234567abcdf2,,,PCV 2 Date,PCV 2 date,Date when PCV 2 vaccination was administered,Question,Date,,,1,1
+6304758b-3748-5678-9012-345678abcdf3,,,PCV 3 Date,PCV 3 date,Date when PCV 3 vaccination was administered,Question,Date,,,1,1
+7415869c-4859-6789-0123-456789abcdf4,,,Rota 1 Date,Rota 1 date,Date when Rota 1 vaccination was administered,Question,Date,,,1,1
+8526970d-5960-7890-1234-567890abcdf5,,,Rota 2 Date,Rota 2 date,Date when Rota 2 vaccination was administered,Question,Date,,,1,1
+9637081e-6071-8901-2345-678901abcdf6,,,Measles Date,Measles vaccination date,Date when Measles vaccination was administered,Question,Date,,,1,1
+0748192f-7182-9012-3456-789012abcdf7,,,Measles 2 Date,Measles 2 date,Date when Measles 2 vaccination was administered,Question,Date,,,1,1
+1859203a-8293-0123-4567-890123abcdf8,,,Vitamin A,Vitamin A supplementation,Question asking if vitamin A supplementation was given,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+2960314b-9304-1234-5678-901234abcdf9,,,Other Vaccine Date,Other vaccine date,Date when other vaccine was administered,Question,Date,,,1,1
+3071425c-0415-2345-6789-012345abcdfa,,,Fully Immunized,Fully immunized status,Question asking about complete immunization status,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4182536d-1526-3456-7890-123456abcdfb,,,First appointment,First appointment date,Date for first follow-up appointment,Question,Date,,,1,1
+5293647e-2637-4567-8901-234567abcdfc,,,Second appointment,Second appointment date,Date for second follow-up appointment,Question,Date,,,1,1
+6304758f-3748-5678-9012-345678abcdfd,,,Third appointment,Third appointment date,Date for third follow-up appointment,Question,Date,,,1,1
+7415869a-4859-6789-0123-456789abcdfe,,,Fourth appointment,Fourth appointment date,Date for fourth follow-up appointment,Question,Date,,,1,1
+8526970b-5960-7890-1234-567890abcdff,,,Type of AEFI,AEFI type,Type of adverse events following immunization,Question,Text,,,1,1
+9637081c-6071-8901-2345-678901abce00,,,Date Observed,AEFI date observed,Date when adverse events following immunization was observed,Question,Date,,,2,1
+8acd890d-2574-44a5-92f0-5e4ae87b604d,,,Is Suckling Effectively,Suckling effectively,Question asking if infant is suckling effectively during breastfeeding assessment,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1e8b3db0-a7af-4dc7-b5a5-8c3af12b9ea6,,,Switching before one is empty,Switching breasts,Question asking if mother switches breasts before one is empty during breastfeeding,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+9c4d5e6f-7081-9012-cdef-345678901888,,,Child Receive other food/drinks,Other food drinks,Question asking if child receives other food or drinks besides breastfeeding,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+0d5e6f70-8192-0123-def0-456789012345,,,Presence of Oral Thrush,Oral thrush,Question asking about presence of oral thrush in infant,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1e6f7081-9203-1234-ef01-567890123456,,,Breastfeeding frequency in 24 hours,Breastfeeding frequency,Numeric question asking how many times infant breastfeeds in 24 hours,Question,Numeric,,,1,1
+2f708192-0314-2345-f012-678901234567,,,Other food frequency in 24 hours,Other food frequency,Numeric question asking how many times child receives other food/drinks in 24 hours,Question,Numeric,,,1,1
+4192031b-2536-4567-1234-890123456789,,,Very Low Birth Weight Below 1500gms,Very low birth weight,Birth weight classification for infants weighing below 1500 grams,Finding,N/A,,,1,1
+5203142c-3647-5678-2345-901234567890,,,Low Birth Weight 1500-2500 gms,Low birth weight,Birth weight classification for infants weighing between 1500-2500 grams,Finding,N/A,,,1,1
+6314253d-4758-6789-3456-012345678901,,,Birth Weight 2500 gms or more,Normal birth weight,Birth weight classification for infants weighing 2500 grams or more,Finding,N/A,,,1,1
+8536475f-6970-8901-5678-234567890123,,,Extremely Preterm GA less than 28 weeks,Extremely preterm,Gestational age classification for infants born before 28 weeks,Finding,N/A,,,1,1
+9647586a-7081-9012-6789-345678901234,,,Very Preterm GA less than 32 weeks,Very preterm,Gestational age classification for infants born before 32 weeks,Finding,N/A,,,1,1
+0758697b-8192-0123-7890-456789012345,,,Early Preterm GA 32-34 weeks,Early preterm,Gestational age classification for infants born between 32-34 weeks,Finding,N/A,,,1,1
+1869708c-9203-1234-8901-567890123456,,,Late Preterm GA 34-36 weeks,Late preterm,Gestational age classification for infants born between 34-36 weeks,Finding,N/A,,,1,1
+2970819d-0314-2345-9012-678901234567,,,Term GA 37 weeks or more,Term (2),Gestational age classification for infants born at 37 weeks or more,Finding,N/A,,,1,1
+3081920e-1425-3456-0123-789012345678,,,Post Term GA more than 41 weeks,Post term,Gestational age classification for infants born after 41 weeks and 7 days,Finding,N/A,,,1,1
+5203142a-3647-5678-2345-901234567890,,,Not Breathing,Not breathing,Clinical finding indicating infant is not breathing,Finding,N/A,,,1,1
+6314253b-4758-6789-3456-012345678901,,,Breathing Poorly 30 breaths per minute,Breathing poorly,Clinical finding indicating infant is breathing poorly at 30 breaths per minute,Finding,N/A,,,1,1
+7425364c-5869-7890-4567-123456789012,,,Under-5 Gasping assessment,Gasping,Clinical finding indicating infant is gasping during breathing assessment,Finding,N/A,,,1,1
+9647586e-7081-9012-6789-345678901234,,,Unable to feed,Unable to feed,Clinical finding indicating infant is unable to feed properly,Finding,N/A,,,1,1
+0758697f-8192-0123-7890-456789012345,,,Umbilicus red or draining pus,Umbilicus infection,Clinical finding indicating umbilicus is red or draining pus,Finding,N/A,,,1,1
+1869708a-9203-1234-8901-567890123456,,,Under-5 Pustule finding,Pustule,Clinical finding indicating presence of pustules on infant skin,Finding,N/A,,,1,1
+2970819b-0314-2345-9012-678901234567,,,Movement only when stimulated,Movement when stimulated,Clinical finding indicating infant moves only when stimulated,Finding,N/A,,,1,1
+3081920c-1425-3456-0123-789012345678,,,No movement even when stimulated,No movement stimulated,Clinical finding indicating infant shows no movement even when stimulated,Finding,N/A,,,1,1
+5203142e-3647-5678-2345-901234567890,,,Not low weight,Not low,Clinical finding indicating infant weight is not low,Finding,N/A,,,1,1
+7425364a-5869-7890-4567-123456789012,,,Increased feeding,Increased,Feeding pattern indicating increased feeding during illness,Finding,N/A,,,1,1
+8536475b-6970-8901-5678-234567890123,,,Same feeding,Same,Feeding pattern indicating same feeding during illness,Finding,N/A,,,1,1
+9647586c-7081-9012-6789-345678901234,,,Child HIV Antibody Test,Child HIV Ab test,Question asking about child HIV antibody test results,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+0758697d-8192-0123-7890-456789012345,,,Bottle feeding method,Bottle,Feeding method using bottle for infant nutrition,Finding,N/A,,,1,1
+1869708e-9203-1234-8901-567890123456,,,Cup feeding method,Cup,Feeding method using cup for infant nutrition,Finding,N/A,,,1,1
+7425364b-5869-7890-4567-123456789012,,,Inappropriate replacement milk or fluids,Inappropriate replacement,Feeding problem indicating inappropriate replacement milk or fluids being used,Finding,N/A,,,1,1
+8536475c-6970-8901-5678-234567890123,,,Under-5 Insufficient replacement feeds,Insufficient feeds,Feeding problem indicating insufficient replacement feeds being provided,Finding,N/A,,,1,1
+9647586d-7081-9012-6789-345678901234,,,Replacement milk incorrectly prepared,Incorrectly prepared,Feeding problem indicating replacement milk is incorrectly or unhygienically prepared,Finding,N/A,,,1,1
+0758697e-8192-0123-7890-456789012345,,,Mixed feeding breast milk and others,Mixed feeding,Feeding problem indicating mixed feeding with breast milk and other foods,Finding,N/A,,,1,1
+1869708f-9203-1234-8901-567890123456,,,Bottle feeding problem,Bottle feeding,Feeding problem related to bottle feeding method,Finding,N/A,,,1,1
+4192031c-2536-4567-1234-890123456789,,,Chin touching the breast,Chin touching breast,Breastfeeding attachment indicator showing chin touching the breast,Finding,N/A,,,1,1
+5203142d-3647-5678-2345-901234567890,,,Mouth wide open,Mouth wide open,Breastfeeding attachment indicator showing mouth wide open,Finding,N/A,,,1,1
+6314253e-4758-6789-3456-012345678901,,,Lower lip turned outward,Lower lip outward,Breastfeeding attachment indicator showing lower lip turned outward,Finding,N/A,,,1,1
+7425364f-5869-7890-4567-123456789012,,,More areola seen above than below mouth,Areola positioning,Breastfeeding attachment indicator showing more areola seen above than below the mouth,Finding,N/A,,,1,1
+9647586b-7081-9012-6789-345678901234,,,Not well attached,Not well,Breastfeeding attachment assessment indicating attachment is not well established,Finding,N/A,,,1,1
+1869708b-9203-1234-8901-567890123456,,,Received postnatal vitamin A doses,Received postnatal doses,Vitamin A status indicating mother received postnatal vitamin A doses,Finding,N/A,,,1,1
+2970819c-0314-2345-9012-678901234567,,,Vitamin A not started,Not started,Vitamin A status indicating supplementation has not been started,Finding,N/A,,,1,1
+db5660ab-ff74-4b9e-9e4a-e3ad1fbb5e1e,,,Duration Notes,Duration notes,Question asking for duration notes in diarrhea assessment,Question,Text,,,1,1
+eabc4230-3847-471c-b590-7554f75a672a,,,Normal skin turgor,Normal turgor,Clinical finding indicating normal skin turgor or pinch test,Finding,N/A,,,1,1
+a40fdbf6-03a0-4769-b085-b0c52b6c0960,,,Slow skin turgor,Slow turgor,Clinical finding indicating slow skin turgor or pinch test,Finding,N/A,,,1,1
+2ecf630a-a156-4883-a3a0-4051e1a9cdd4,,,Child DNA PCR Test Result,Child DNA PCR,Question asking about child DNA PCR test results for HIV,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+500a5312-b28e-4a19-a602-48c81b033321,,,Low weight status,Low weight,Clinical finding indicating low weight status in infant assessment,Finding,N/A,,,1,1
+22c555fe-de45-44b6-bf86-f485ad10150d,,,Low weight feeding problem,Low weight problem,Feeding problem indicating low weight in HIV positive mother assessment,Finding,N/A,,,1,1
+8b0e78c1-2594-4d14-bbc0-f888d4b8de44,,,Oral thrush feeding problem,Oral thrush problem,Feeding problem indicating oral thrush opportunistic infection,Finding,N/A,,,1,1
+3c181ead-bfd7-4443-b8f4-08dcfac69b01,,,Breastfeeding positioning good,Good positioning,Breastfeeding positioning assessment indicating good positioning,Finding,N/A,,,1,1
+9a4073ad-f433-46ef-96ac-032a27173d7b,,,Breastfeeding positioning poor,Poor positioning,Breastfeeding positioning assessment indicating poor positioning,Finding,N/A,,,1,1
+1a7ccb02-9d98-4085-b5b0-ed66454d26de,,,Breastfeeding counseling topic,Breastfeeding counseling,Counseling topic about breastfeeding for mother education,Finding,N/A,,,1,1
+b2c3d4e5-f607-8901-bcde-f23456789012,,,Grunting symptom,Grunting,Symptom/finding of grunting sounds in infant clinical assessment,Finding,N/A,,,1,1
+d4e5f607-1829-0123-def0-456789012345,,,Fever or low body temperature symptom,Fever/low temperature,Symptom/finding of fever or low body temperature in infant clinical assessment,Finding,N/A,,,1,1
+ca573c39-0dae-4482-9d3e-f53c715a4dae,,,Mother HIV antibody test result,Mother HIV Ab test,Question asking for mother's HIV antibody test result,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+18f96a7c-2c9d-012e-456f-234567890123,,,Fast breathing present,Fast breathing,Child has fast breathing indicating respiratory distress,Symptom/Finding,N/A,,,1,1
+25d6e758-0970-890b-5234-678bcdef0123,,,Food counseling,Food,Counseling about appropriate food and feeding practices for child,Finding,N/A,,,1,1
+36e7f869-1a81-901c-6345-789cdef01234,,,Fluid counseling,Fluid,Counseling about appropriate fluid management and hydration for child,Finding,N/A,,,1,1
+58f9a2b3-4c5d-6e7f-8901-234567890def,,,Return visit counseling,Return visit,Counseling about when to return for follow-up care and warning signs,Finding,N/A,,,1,1
+5203142f-3647-5678-2345-901234567890,,,Keep warm counseling topic,Keep warm,Counseling topic about keeping child warm for mother education,Finding,N/A,,,1,1
+8d0d0bff-3d1b-4450-b7df-a208fbe7b4a4,,,Referred to facility or service,Referred to,Free text field for documenting referral destination,Question,Text,,,1,1
+36d82355-9c8b-495f-aab9-186a7af90537,,,Presence of Breast Feeding in the last 6 months,Breastfeeding last 6 months,Question asking if breast feeding was present in the last 6 months,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+7b2c3d4e-5f60-7890-1234-567890abcd11,,,Age at admission in days,Age at admission,Numeric value representing age of patient at time of hospital or facility admission in days,Question,Numeric,,,1,1
+8c3d4e5f-6071-8901-2345-678901abcd12,,,Age less than 18 years risk factor,Age <18 risk,Question asking if patient age less than 18 years is a risk factor for current condition,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+9d4e5f60-7182-9012-3456-789012abcd13,,,Age more than 35 years risk factor,Age >35 risk,Question asking if patient age more than 35 years is a risk factor for current condition,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+0e5f6071-8293-0123-4567-890123abcd14,,,Rh isoimmunization in pregnancy,Rh isoimmunization,Question asking about Rh negative isoimmunization in current or previous pregnancy,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1f607182-9304-1234-5678-901234abcd15,,,Pelvic mass present,Pelvic mass,Question asking about presence of pelvic mass during pregnancy assessment,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+2071a2b3-0415-2345-6789-012345abcd16,,,Hypertension risk factor pregnancy,Hypertension risk,Question asking about systolic blood pressure greater than 140 mmHg or diastolic greater than 90 mmHg as pregnancy risk factor,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+3182b3c4-1526-3456-7890-123456abcd17,,,Last baby birth weight less than 2500g,Last baby <2500g,Question asking if birth weight of last baby was less than 2500 grams,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4293c4d5-2637-4567-8901-234567abcd18,,,Last baby birth weight more than 4000g,Last baby >4000g,Question asking if birth weight of last baby was more than 4000 grams,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+5304d5e6-3748-5678-9012-345678abcd19,,,Last pregnancy hypertension admission,Last pregnancy HTN,Question asking about hospital admission for hypertension preeclampsia or eclampsia in last pregnancy,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+6415e6f7-4859-6789-0123-456789abcd20,,,Previous reproductive tract surgery,Previous repro surgery,Question asking about previous surgery on reproductive tract including myomectomy septum removal fistula repair cone biopsy cesarean section rupture repair or cervical cerclage,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+7526f708-5960-7890-1234-567890abcd21,,,Prophylactic antibiotics given,Prophylactic antibiotics,Free text field for documenting prophylactic antibiotics administered to patient,Question,Text,,,1,1
+974808b2-7182-9012-3456-789012abcd23,,,Augmented labor,Augmented,Labor that has been augmented or stimulated with medical intervention,Finding,N/A,,,1,1
+a85909c3-8293-0123-4567-890123abcd24,,,ROM hours prior to delivery,ROM hours,Numeric value representing hours of rupture of membranes prior to delivery,Question,Numeric,,,1,1
+b960a0d4-9304-1234-5678-901234abcd25,,,Cesarean section or instrumental delivery indication,C/S indication,Free text field for documenting indication for cesarean section or instrumental delivery,Question,Text,,,1,1
+c071b1e5-0415-2345-6789-012345abcd26,,,Inpatient status,Inpatient status,Question asking if patient is currently admitted as inpatient,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+d182c2f6-1526-3456-7890-123456abcd27,,,Newborn resuscitation notes,Resuscitation notes,Free text field for documenting newborn resuscitation procedures and clinical notes,Question,Text,,,1,1
+e293d307-2637-4567-8901-234567abcd28,,,TTC eye ointment administration,TTC eye ointment,Question asking if tetracycline eye ointment was given in both eyes of newborn,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+f304e418-3748-5678-9012-345678abcd29,,,Vitamin K administration newborn,Vitamin K given,Question asking if vitamin K was administered to newborn for hemorrhagic disease prevention,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+0415f529-4859-6789-0123-456789abcd30,,,Reason for referral documentation,Reason for referral,Free text field for documenting detailed reason for patient referral to higher level facility,Question,Text,,,1,1
+1162063a-5960-7890-1234-567890abcd31,,,Referral date and time,Referral DateTime,Date and time when patient referral was initiated or documented,Question,Datetime,,,1,1
+2273174b-6081-7902-2456-789123abcd32,,,Hepatitis B virus test result,HBV result,Question asking for hepatitis B virus test result with reactive or non-reactive options,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+3384285c-7192-8013-3567-890234abcd33,,,Multiple pregnancy diagnosed or suspected,Multiple pregnancy,Question asking if multiple pregnancy has been diagnosed or is suspected,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4495396d-8203-9124-4678-901345abcd34,,,Dexamethasone administration,Dexamethasone given,Question asking if dexamethasone was administered to patient,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+5506407e-9314-0235-5789-012456abcd35,,,Magnesium sulphate administration,Magnesium sulphate given,Question asking if magnesium sulphate was administered to patient,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+6617518f-0425-1346-6890-123567abcd36,,,Other medications administered,Other medications,Free text field for documenting other medications administered to patient,Question,Text,,,1,1
+7728629a-1536-2457-7901-234678abcd37,,,Spontaneous labor onset,Spontaneous,Labor that began spontaneously without medical intervention,Finding,N/A,,,1,1
+8839730b-2647-3568-8012-345789abcd38,,,Induced labor onset,Induced,Labor that was medically induced,Finding,N/A,,,1,1
+9940841c-3758-4679-9123-456890abcd39,,,Elective cesarean section,Elective C/S,Planned cesarean section delivery,Finding,N/A,,,1,1
+8b2c3d4e-5f60-7890-1234-567890abcd02,,,Higher Order Multiple Birth,Higher multiple,Birth type indicating higher order multiple birth (triplets or more),Finding,N/A,,,1,1
+0d4e5f60-7182-9012-3456-789012abcd04,,,Stillbirth Not applicable,Not applicable,Stillbirth classification indicating not applicable to current case,Finding,N/A,,,1,1
+1e5f6071-8293-0123-4567-890123abcd05,,,Newborn Fresh stillbirth,Fresh stillbirth,Stillbirth classification indicating fresh stillbirth,Finding,N/A,,,1,1
+2f607182-9304-1234-5678-901234abcd06,,,Newborn Macerated stillbirth,Macerated stillbirth,Stillbirth classification indicating macerated stillbirth,Finding,N/A,,,1,1
+3071a2b3-0415-2345-6789-012345abcd07,,,Sex,Sex,Question asking about infant sex or gender,Question,Coded,1534AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1535AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4293c4d5-2637-4567-8901-234567abcd08,,,Vitamin K administration,Vitamin K,Essential newborn care intervention involving vitamin K administration for hemorrhagic disease prevention,Finding,N/A,,,1,1
+5293c4d5-2637-4567-8901-234567abcd09,,,TTC eye ointment administration (2),TTC eye ointment (2),Essential newborn care intervention involving tetracycline eye ointment administration,Finding,N/A,,,1,1
+6293c4d5-2637-4567-8901-234567abcd10,,,Skin to Skin Contact,Skin to skin,Essential newborn care intervention involving immediate skin to skin contact,Finding,N/A,,,1,1
+6304d5e6-3748-5678-9012-345678abcd10,,,Maternal bleeding controlled,Maternal bleeding controlled,Question asking if maternal bleeding is controlled after delivery,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+7415e6f7-4859-6789-0123-456789abcd11,,,Mother needs to start antibiotics,Mother needs antibiotics,Question asking if mother needs to start antibiotic treatment,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+8526f708-5960-7890-1234-567890abcd12,,,Baby need to start antibiotics,Baby needs antibiotics,Question asking if baby needs to start antibiotic treatment,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+9637081a-6071-8901-2345-678901abcd13,,,Is baby feeding well,Baby feeding well,Question asking if baby is feeding well,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+0748192b-7182-9012-3456-789012abcd14,,,If mother HIV positive mother is on ART and baby has neverapin syrup for 6 weeks,HIV positive mother ART,Question asking if HIV positive mother is on ART and baby has nevirapine syrup for 6 weeks,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1859203c-8293-0123-4567-890123abcd15,,,Family planning options counseled,Family planning counseled,Question asking if family planning options were counseled,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+2960314d-9304-1234-5678-901234abcd16,,,Health education offered,Health education offered,Question asking if health education was offered,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+3071425e-0415-2345-6789-012345abcd17,,,Appointment given if needed,Appointment given,Question asking if appointment was given if needed,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+cefe2cf4-eace-442a-8ca6-730997ce1eb5,,,FHS,FHS,Assessment of fetal heart sounds during pregnancy examination,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+ffdae04b-b351-4a8d-9368-4658c4e52f49,,,Amount of Liquor,Amount of Liquor,Clinical assessment of amniotic fluid volume during pregnancy examination,Question,Text,,,1,1
+74234a5c-f895-4669-ba7d-ea2152fc29db,,,Time of illness or accident,Time of illness,Free text field for documenting time of illness or accident in pediatric triage,Question,Text,,,1,1
+e2dfbf1b-9ad8-40e8-8333-ed03363edde6,,,If yes specify details,If yes specify,Free text field for specifying additional details when yes is selected,Question,Text,,,1,1
+65a8c74c-544d-4517-8dc9-485efd819ff6,,,Red emergency color,Red,Red emergency triage color indicating immediate attention required,Finding,N/A,,,1,1
+67792c5f-c3d0-42ef-b20b-a61c30d1fa9b,,,Yellow emergency color,Yellow,Yellow emergency triage color indicating urgent attention required,Finding,N/A,,,1,1
+4da071fe-7089-4e59-b53b-df16d49337dd,,,Green emergency color,Green,Green emergency triage color indicating non-urgent attention,Finding,N/A,,,1,1
+dcc04d8c-834d-4824-be39-375c40e42527,,,If red ABCD assessment,If red ABCD,Question asking if red ABCD assessment protocol should be followed,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+4b17471d-290e-42b6-a4d5-05b1d2dffc19,,,Seen immediately assessment,Seen immediately,Question asking if patient should be seen immediately,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+892f9568-5086-4148-af4c-7d14f7d2cfe8,,,Obstructed breathing,Obstructed breathing,Clinical finding of obstructed breathing in pediatric patient,Finding,N/A,,,1,1
+7dcd7908-2118-43d3-b469-c90fb042836c,,,Severe respiratory distress,Severe respiratory distress,Clinical finding of severe respiratory distress in pediatric patient,Finding,N/A,,,1,1
+46beb2f8-f33e-4ea9-95ff-261d2ff61838,,,Pediatric Cold hands finding,Cold hands,Clinical finding of cold hands indicating poor circulation,Finding,N/A,,,1,1
+d3c2517d-049a-4258-8046-fbff8a9e0c86,,,Capillary refill longer than 2 seconds,Capillary refill >2sec,Clinical finding of delayed capillary refill indicating poor circulation,Finding,N/A,,,1,1
+ef376108-0270-4f68-9a61-3ee11adc1e1b,,,Weak and fast pulse,Weak fast pulse,Clinical finding of weak and fast pulse indicating circulatory compromise,Finding,N/A,,,1,1
+edbfc52e-de3e-45cf-b52b-3c4425c5a172,,,Very slow skin pinch,Very slow skin pinch,Clinical finding of very slow skin pinch indicating severe dehydration,Finding,N/A,,,1,1
+628b0af3-49e4-46f3-b093-178bd111eb7a,,,Tiny baby less than one month,Tiny baby <1mo,Clinical finding of tiny baby less than one month old,Finding,N/A,,,1,1
+415daa59-d04f-4fde-88cc-5c92efd38e40,,,Temperature abnormal,Temperature abnormal,Clinical finding of abnormal temperature in pediatric patient,Finding,N/A,,,1,1
+f8fbd69a-8ce5-4512-9750-5774f0293d23,,,Child is very hot greater than 38.8,Child very hot >38.8,Clinical finding of hyperthermia with temperature greater than 38.8 degrees,Finding,N/A,,,1,1
+25fe0585-30f9-4e28-a01a-15c3e40e3430,,,Child is very cold less than 36.8,Child very cold <36.8,Clinical finding of hypothermia with temperature less than 36.8 degrees,Finding,N/A,,,1,1
+72d950f7-17c5-469d-abf0-8882d656e049,,,Trauma or urgent surgical condition,Trauma urgent surgical,Clinical finding of trauma or urgent surgical condition requiring immediate attention,Finding,N/A,,,1,1
+5c401ca5-67d6-43b4-9bce-6189b62224df,,,Pallor observed,Pallor,Clinical finding of pallor indicating anemia or poor circulation,Finding,N/A,,,1,1
+2e9fb826-1b3d-45aa-b2ba-fb7f30e22e70,,,Poisoning history pain severe,Poisoning pain severe,Clinical finding of poisoning history or severe pain,Finding,N/A,,,1,1
+88def9bc-6eba-433d-ae62-4cf563c00e9c,,,Pediatric Respiratory distress,Respiratory distress,Clinical finding of respiratory distress in pediatric patient,Finding,N/A,,,1,1
+843b93f3-303a-4358-ae57-0ef855b5e79a,,,Restless continually irritable and lethargy,Restless irritable lethargy,Clinical finding of restless continually irritable behavior and lethargy,Finding,N/A,,,1,1
+ad5d211b-1701-4cd0-b55b-dd681598ddc6,,,Referral urgent,Referral urgent,Clinical finding indicating need for urgent referral,Finding,N/A,,,1,1
+b079374e-e06f-433c-b373-d8f21fb7ca86,,,Malnutrition visible severe wasting,Malnutrition severe wasting,Question asking about visible severe wasting indicating malnutrition,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+45bb0b1a-0159-4cd6-8855-af08e89521a7,,,Oedema of both feet,Oedema both feet,Question asking about presence of oedema in both feet,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+c41e8474-d99b-4b22-b74b-dde2696cbf87,,,Burn assessment,Burn assessment,Question asking about presence of burns in pediatric patient,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+d8f4631d-fccb-41ab-a8d1-3fc881a8a430,,,Recent convulsion within past 6 hours,Recent convulsion 6hrs,Question asking about recent convulsion within the past 6 hours,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+e5c23320-f757-46b0-988d-fffa549fba33,,,Pediatric Heart disease history,Heart disease,Clinical finding of heart disease as underlying condition,Finding,N/A,,,1,1
+49b9a38b-76b2-4c53-89d2-cb9ff8ca3043,,,Pediatric Renal disease history,Renal disease,Clinical finding of renal disease as underlying condition,Finding,N/A,,,1,1
+a66a20d9-aca4-473f-b5f1-935da7946c10,,,Lung disease,Lung disease,Clinical finding of lung disease as underlying condition,Finding,N/A,,,1,1
+3596837f-d31d-40ee-82c1-ce0eeb15521f,,,Malignancy,Malignancy,Clinical finding of malignancy as underlying condition,Finding,N/A,,,1,1
+e63c3415-62a0-4340-b416-0c190b8c7407,,,Retroviral infection,Retroviral infection,Clinical finding of retroviral infection as underlying condition,Finding,N/A,,,1,1
+f25a277d-34b8-4258-9e5f-41b08bb36a90,,,Pediatric Epilepsy history,Epilepsy,Clinical finding of epilepsy as underlying condition,Finding,N/A,,,1,1
+3dfb1639-4e60-4877-a3ca-5e37356175f3,,,Malnutrition underlying,Malnutrition underlying,Clinical finding of malnutrition as underlying condition,Finding,N/A,,,1,1
+174c5baa-70b2-45e4-9a18-d1f2ccb70ceb,,,Recent admission,Recent admission,Clinical finding of recent hospital admission,Finding,N/A,,,1,1
+9694701e-109a-41d3-8adb-8f07670fbcb5,,,Alert,Alert,Clinical finding of alert mental status in pediatric patient,Finding,N/A,,,1,1
+7ccfb2a1-7fe8-4eb9-bd53-de250a2bc122,,,Irritable confused,Irritable confused,Clinical finding of irritable or confused mental status,Finding,N/A,,,1,1
+1a4c003c-3ed4-4776-8457-72c6bc50cb6c,,,Lethargic unconscious coma,Lethargic unconscious coma,Clinical finding of lethargic unconscious or coma mental status,Finding,N/A,,,1,1
+c6728b6b-defe-4a20-a8c1-1137b381af71,,,None or mild,None mild,Clinical finding of none or mild severity,Finding,N/A,,,1,1
+ae48da34-3e5b-4c24-922c-aea87d92a373,,,Pediatric Moderate severity,Moderate,Clinical finding of moderate severity,Finding,N/A,,,1,1
+f3cafc79-9cab-413a-8abf-96a4c0129412,,,Poor perfusion assessment,Poor perfusion,Question asking about poor perfusion in pediatric patient,Question,Coded,703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+1897377e-e00b-469e-b98d-5cc7ad9e0f87,,,Signs of convulsion assessment,Signs of convulsion,Question asking about signs of convulsion in pediatric patient,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+668a4165-5515-405d-9fd1-d2aaedd1dbbd,,,Non-urgent green,Non-urgent green,Triage classification of non-urgent green category,Finding,N/A,,,1,1
+f05aee3c-ba96-4a43-b0b4-2894db7999d0,,,Urgent yellow 1 or 2 yellow,Urgent yellow,Triage classification of urgent yellow category,Finding,N/A,,,1,1
+ecee70d1-8ec1-42c4-9cc6-7ac6addf2517,,,Emergent red,Emergent red,Triage classification of emergent red category,Finding,N/A,,,1,1
+de95d3e4-063a-4be1-9b1e-b4c6d2450b2d,,,Seen within 1-4 hours,Seen within 1-4hrs,Action indicating patient should be seen within 1-4 hours,Finding,N/A,,,1,1
+84a5ebff-f66e-466a-8aa9-ba9cba6842af,,,Seen immediately action,Seen immediately (2),Action indicating patient should be seen immediately,Finding,N/A,,,1,1
+05483b0c-10e6-4fd1-972a-acb23b722c6d,,,If green proceed with assessment and treatment,If green proceed,Free text field for instructions when green triage level is assigned,Question,Text,,,1,1
+b2c3d4e5-6f70-8901-2345-678901bcdef0,,,PMTCT Sex worker risk,Sex Worker,Individual engaged in commercial sex work with increased HIV transmission risk,Finding,N/A,,,1,1
+c3d4e5f6-7081-9012-3456-789012cdef01,,,People Who Inject Drugs,PWID,Individuals who inject drugs with increased HIV transmission risk,Finding,N/A,,,1,1
+d4e5f607-8192-0123-4567-890123def012,,,Men who have Sex with Men and Transgenders,MSM/Transgender,Men who have sex with men and transgender individuals with increased HIV transmission risk,Finding,N/A,,,1,1
+e5f60718-9203-1234-5678-901234ef0123,,,Blood or Organ Recipient,Blood/Organ Recipient,Individual who received blood transfusion or organ transplant with HIV transmission risk,Finding,N/A,,,1,1
+f6071829-0314-2345-6789-012345f01234,,,PMTCT Client of sex worker risk,Client Sex Worker,Individual who is client of sex worker with increased HIV transmission risk,Finding,N/A,,,1,1
+07182930-1425-3456-7890-123456012345,,,Migrant,Migrant,Migrant individual with increased HIV transmission risk due to mobility,Finding,N/A,,,1,1
+18293041-2536-4567-8901-234567123456,,,Spouse or Partner of Migrant,Spouse/Partner Migrant,Spouse or partner of migrant individual with increased HIV transmission risk,Finding,N/A,,,1,1
+29304152-3647-5678-9012-345678234567,,,Live Birth Count,Live Birth Count,Numeric count of live births for HIV positive mother,Question,Numeric,,,1,1
+30415263-4758-6789-0123-456789345678,,,Birth Weight in Grams,Birth Weight,Birth weight measurement in grams for infant born to HIV positive mother,Question,Numeric,,,1,1
+41526374-5869-7890-1234-567890456789,,,Started ARV Prophylaxis for Baby,ARV Prophylaxis Baby,Question asking if antiretroviral prophylaxis was started for baby born to HIV positive mother,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+63748596-7081-9012-3456-789012678901,,,Exclusive Breast Feeding,Exclusive BF,Exclusive breastfeeding option for HIV positive mother,Finding,N/A,,,1,1
+74859607-8192-0123-4567-890123789012,,,Replacement Breast Feeding,Replacement BF,Replacement feeding option for HIV positive mother avoiding breastfeeding,Finding,N/A,,,1,1
+85960718-9203-1234-5678-901234890123,,,Mixed Breast Feeding,Mixed BF,Mixed feeding option combining breastfeeding with other foods for HIV positive mother,Finding,N/A,,,1,1
+96071829-0314-2345-6789-012345901234,,,Family Planning Services Provided Postpartum,FP Services Postpartum,Question asking if family planning services were provided postpartum to HIV positive mother,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+a7182930-1425-3456-7890-123456012345,,,Transferred Out During Pregnancy Date,Transfer Out Pregnancy,Date when HIV positive woman was transferred out during pregnancy,Question,Date,,,1,1
+b8293041-2536-4567-8901-234567123456,,,Transfer Place,Transfer Place,Place or facility where patient was transferred for continuum of care,Question,Text,,,1,1
+c9304152-3647-5678-9012-345678234567,,,Transfer Date,Transfer Date,Date when patient was transferred for continuum of care,Question,Date,,,1,1
+d0415263-4758-6789-0123-456789345678,,,Transfer Remarks,Transfer Remarks,Additional remarks or notes about patient transfer for continuum of care,Question,Text,,,1,1
+e1526374-5869-7890-1234-567890456789,,,Others Specify,Others Specify,Free text field to specify other details not covered in standard options,Question,Text,,,1,1
+03748596-7081-9012-3456-789012678901,,,Before Pregnancy,Before Pregnancy,HIV positive status identified before pregnancy,Finding,N/A,,,1,1
+14859607-8192-0123-4567-890123789012,,,Antenatal Period,Antenatal Period,HIV positive status identified during antenatal period,Finding,N/A,,,1,1
+25960718-9203-1234-5678-901234890123,,,PMTCT Intrapartum period,Intrapartum,HIV positive status identified during intrapartum period,Finding,N/A,,,1,1
+36071829-0314-2345-6789-012345901234,,,PMTCT Postpartum period,Postpartum,HIV positive status identified during postpartum period,Finding,N/A,,,1,1
+47182930-1425-3456-7890-123456012345,,,Diagnosed HIV Positive Date,HIV Positive Date,Date when patient was diagnosed as HIV positive,Question,Date,,,1,1
+58293041-2536-4567-8901-234567123456,,,Male Partner HIV Status,Male Partner HIV,Question asking about HIV status of male partner who already knows their status,Question,Coded,664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+69304152-3647-5678-9012-345678234567,,,Male Partner Referred for Testing,Male Partner Referred,Question asking if male partner was referred for HIV testing when status unknown,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+70415263-4758-6789-0123-456789345678,,,WHO Clinical Staging,WHO Clinical Stage,Question asking about WHO clinical staging for HIV positive patient,Question,Coded,1204AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1205AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1206AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1207AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,1
+81526374-5869-7890-1234-567890456789,,,ART Eligibility Date,ART Eligibility Date,Date when patient became eligible for antiretroviral therapy,Question,Date,,,1,1
+a3748596-7081-9012-3456-789012678901,,,Postnatal,Postnatal,Postnatal period for HIV treatment or identification,Finding,N/A,,,1,1
+b4859607-8192-0123-4567-890123789012,,,ART Start Date,ART Start Date,Date when antiretroviral therapy was started,Question,Date,,,1,1
+d6071829-0314-2345-6789-012345901234,,,AZT 3TC NVP,AZT/3TC/NVP,Antiretroviral regimen containing Zidovudine Lamivudine and Nevirapine,Finding,N/A,,,1,1
+e7182930-1425-3456-7890-123456012345,,,AZT 3TC LPV r,AZT/3TC/LPV/r,Antiretroviral regimen containing Zidovudine Lamivudine and Lopinavir ritonavir,Finding,N/A,,,1,1
+f8293041-2536-4567-8901-234567123456,,,AZT 3TC NVP Paediatric,AZT/3TC/NVP-Paed,Paediatric antiretroviral regimen containing Zidovudine Lamivudine and Nevirapine,Finding,N/A,,,1,1
+09304152-3647-5678-9012-345678234567,,,AZT 3TC EFV,AZT/3TC/EFV,Antiretroviral regimen containing Zidovudine Lamivudine and Efavirenz,Finding,N/A,,,1,1
+10415263-4758-6789-0123-456789345678,,,AZT 3TC EFV Paediatric,AZT/3TC/EFV-Paed,Paediatric antiretroviral regimen containing Zidovudine Lamivudine and Efavirenz,Finding,N/A,,,1,1
+21526374-5869-7890-1234-567890456789,,,TDF 3TC NVP,TDF/3TC/NVP,Antiretroviral regimen containing Tenofovir Lamivudine and Nevirapine,Finding,N/A,,,1,1
+32637485-6970-8901-2345-678901567890,,,TDF 3TC NVP Paediatric,TDF/3TC/NVP-Paed,Paediatric antiretroviral regimen containing Tenofovir Lamivudine and Nevirapine,Finding,N/A,,,1,1
+43748596-7081-9012-3456-789012678901,,,TDF 3TC EFV,TDF/3TC/EFV,Antiretroviral regimen containing Tenofovir Lamivudine and Efavirenz,Finding,N/A,,,1,1
+54859607-8192-0123-4567-890123789012,,,TDF 3TC EFV Paediatric,TDF/3TC/EFV-Paed,Paediatric antiretroviral regimen containing Tenofovir Lamivudine and Efavirenz,Finding,N/A,,,1,1
+65960718-9203-1234-5678-901234890123,,,TDF 3TC LPV r,TDF/3TC/LPV/r,Antiretroviral regimen containing Tenofovir Lamivudine and Lopinavir ritonavir,Finding,N/A,,,1,1
+76071829-0314-2345-6789-012345901234,,,CD4 Count After 6 Months,CD4 6 Months,CD4 count measurement after 6 months of antiretroviral therapy,Question,Numeric,,,1,1
+87182930-1425-3456-7890-123456012345,,,CD4 Count After 12 Months,CD4 12 Months,CD4 count measurement after 12 months of antiretroviral therapy,Question,Numeric,,,1,1
+a9304152-3647-5678-9012-345678234567,,,Category A,Category A,Pregnancy category A for medication safety during pregnancy,Finding,N/A,,,1,1
+b0415263-4758-6789-0123-456789345678,,,Category B,Category B,Pregnancy category B for medication safety during pregnancy,Finding,N/A,,,1,1
+c1526374-5869-7890-1234-567890456789,,,Category C,Category C,Pregnancy category C for medication safety during pregnancy,Finding,N/A,,,1,1
+d2637485-6970-8901-2345-678901567890,,,Category D,Category D,Pregnancy category D for medication safety during pregnancy,Finding,N/A,,,1,1
+e3748596-7081-9012-3456-789012678901,,,Category X,Category X,Pregnancy category X for medication safety during pregnancy,Finding,N/A,,,1,1
+f4859607-8192-0123-4567-890123789012,,,Category N,Category N,Pregnancy category N for medication safety during pregnancy,Finding,N/A,,,1,1
+05960718-9203-1234-5678-901234890123,,,TB Treatment Start Date,TB Treatment Date,Date when tuberculosis treatment was started during pregnancy,Question,Date,,,1,1
+27182930-1425-3456-7890-123456012345,,,On Treatment,On Treatment,Patient is currently on antiretroviral treatment,Finding,N/A,,,1,1
+38293041-2536-4567-8901-234567123456,,,Stopped Treatment,Stopped Treatment,Patient has stopped antiretroviral treatment,Finding,N/A,,,1,1
+49304152-3647-5678-9012-345678234567,,,PMTCT Transferred out,Transferred Out,Patient was transferred out to another facility,Finding,N/A,,,1,1
+50415263-4758-6789-0123-456789345678,,,Missing Status,Missing,Patient status is missing or unknown,Finding,N/A,,,1,1
+61526374-5869-7890-1234-567890456789,,,ART lost to follow-up,LTFU ART,Patient is lost to follow-up care,Finding,N/A,,,1,1
+83748596-7081-9012-3456-789012678901,,,Adherence Level A,Adherence A,Adherence level A indicating excellent adherence to treatment,Finding,N/A,,,1,1
+94859607-8192-0123-4567-890123789012,,,Adherence Level B,Adherence B,Adherence level B indicating good adherence to treatment,Finding,N/A,,,1,1
+a5960718-9203-1234-5678-901234890123,,,Adherence Level C,Adherence C,Adherence level C indicating poor adherence to treatment,Finding,N/A,,,1,1
+c7182930-1425-3456-7890-123456012345,,,Normal Delivery,Normal Delivery,Normal vaginal delivery without complications,Finding,N/A,,,1,1
+d8293041-2536-4567-8901-234567123456,,,Vacuum Delivery,Vacuum Delivery,Vacuum-assisted vaginal delivery,Finding,N/A,,,1,1
+e9304152-3647-5678-9012-345678234567,,,PMTCT Forceps delivery,Forceps Delivery,Forceps-assisted vaginal delivery,Finding,N/A,,,1,1
+f0415263-4758-6789-0123-456789345678,,,Cesarean Section Delivery,Cesarean Delivery,Delivery by cesarean section surgery,Finding,N/A,,,1,1
+12637485-6970-8901-2345-678901567890,,,Livebirth,Livebirth,Baby was born alive,Finding,N/A,,,1,1
+23748596-7081-9012-3456-789012678901,,,PMTCT Stillbirth outcome,Stillbirth,Baby was stillborn,Finding,N/A,,,1,1
+34859607-8192-0123-4567-890123789012,,,Stillbirth Macerated,Stillbirth Macerated,Baby was stillborn with maceration,Finding,N/A,,,1,1
+3df0f2a1-2981-40b7-b7de-d7ed202e39e1,,,Vitals adult set,Adult vitals,Vital signs form template for adult patients,Finding,N/A,,,1,1
+c23a7266-609f-4985-9bb4-037b34fed6f0,,,Midwives vital sign sheet,Midwives vitals,Vital signs form template for midwifery care,Finding,N/A,,,1,1
+ccfd3dab-bab5-4503-a338-87e12bdefaea,,,Vital sign and pain tracker format,Pain tracker vitals,Vital signs form template with pain assessment tracking,Finding,N/A,,,1,1
+0f869001-1920-123d-4561-234567890123,,,Below minus 3 standard deviation,Below -3 SD,Weight for age below minus 3 standard deviations,Finding,N/A,,,1,1
+10970112-2031-234e-5672-345678901234,,,Between minus 3 and minus 2 standard deviation,Between -3 and -2 SD,Weight for age between minus 3 and minus 2 standard deviations,Finding,N/A,,,1,1
+11081223-3142-345f-6783-456789012345,,,Between minus 2 and minus 1 standard deviation,Between -2 and -1 SD,Weight for age between minus 2 and minus 1 standard deviations,Finding,N/A,,,1,1
+12192334-4253-4560-7894-567890123456,,,Between minus 1 and 0 standard deviation,Between -1 and 0 SD,Weight for age between minus 1 and 0 standard deviations,Finding,N/A,,,1,1
+13203445-5364-5671-8905-678901234567,,,Between 0 and 1 standard deviation,Between 0 and 1 SD,Weight for age between 0 and 1 standard deviations,Finding,N/A,,,1,1
+14314556-6475-6782-9016-789012345678,,,Between 1 and 2 standard deviation,Between 1 and 2 SD,Weight for age between 1 and 2 standard deviations,Finding,N/A,,,1,1
+15425667-7586-7893-0127-890123456789,,,Between 2 and 3 standard deviation,Between 2 and 3 SD,Weight for age between 2 and 3 standard deviations,Finding,N/A,,,1,1
+16536778-8697-890a-1238-901234567890,,,Above 3 standard deviation,Above 3 SD,Weight for age above 3 standard deviations,Finding,N/A,,,1,1
+18758990-0819-012c-3450-123456789012,,,Weight for height below minus 3,WFH below -3,Weight for height below minus 3 standard deviations,Finding,N/A,,,1,1
+19869001-1920-123d-4561-234567890123,,,Weight for height between minus 3 and minus 2,WFH -3 to -2,Weight for height between minus 3 and minus 2 standard deviations,Finding,N/A,,,1,1
+20970112-2031-234e-5672-345678901234,,,Weight for height between minus 2 and minus 1,WFH -2 to -1,Weight for height between minus 2 and minus 1 standard deviations,Finding,N/A,,,1,1
+21081223-3142-345f-6783-456789012345,,,Weight for height between minus 1 and 0,WFH -1 to 0,Weight for height between minus 1 and 0 standard deviations,Finding,N/A,,,1,1
+22192334-4253-4560-7894-567890123456,,,Weight for height between 0 and 1,WFH 0 to 1,Weight for height between 0 and 1 standard deviations,Finding,N/A,,,1,1
+23203445-5364-5671-8905-678901234567,,,Weight for height between 1 and 2,WFH 1 to 2,Weight for height between 1 and 2 standard deviations,Finding,N/A,,,1,1
+24314556-6475-6782-9016-789012345678,,,Weight for height between 2 and 3,WFH 2 to 3,Weight for height between 2 and 3 standard deviations,Finding,N/A,,,1,1
+25425667-7586-7893-0127-890123456789,,,Weight for height above 3,WFH above 3,Weight for height above 3 standard deviations,Finding,N/A,,,1,1
+27647889-9708-901b-2349-012345678901,,,Height for age below minus 3,HFA below -3,Height for age below minus 3 standard deviations,Finding,N/A,,,1,1
+28758990-0819-012c-3450-123456789012,,,Height for age between minus 3 and minus 2,HFA -3 to -2,Height for age between minus 3 and minus 2 standard deviations,Finding,N/A,,,1,1
+29869001-1920-123d-4561-234567890123,,,Height for age between minus 2 and minus 1,HFA -2 to -1,Height for age between minus 2 and minus 1 standard deviations,Finding,N/A,,,1,1
+30970112-2031-234e-5672-345678901234,,,Height for age between minus 1 and 0,HFA -1 to 0,Height for age between minus 1 and 0 standard deviations,Finding,N/A,,,1,1
+31081223-3142-345f-6783-456789012345,,,Height for age between 0 and 1,HFA 0 to 1,Height for age between 0 and 1 standard deviations,Finding,N/A,,,1,1
+32192334-4253-4560-7894-567890123456,,,Height for age between 1 and 2,HFA 1 to 2,Height for age between 1 and 2 standard deviations,Finding,N/A,,,1,1
+33203445-5364-5671-8905-678901234567,,,Height for age between 2 and 3,HFA 2 to 3,Height for age between 2 and 3 standard deviations,Finding,N/A,,,1,1
+34314556-6475-6782-9016-789012345678,,,Height for age above 3,HFA above 3,Height for age above 3 standard deviations,Finding,N/A,,,1,1
+36536778-8697-890a-1238-901234567890,,,Moro reflex exaggerated,Exaggerated,Moro reflex response is exaggerated,Finding,N/A,,,1,1
+37647889-9708-901b-2349-012345678901,,,Moro reflex complete,Complete,Moro reflex response is complete and normal,Finding,N/A,,,1,1
+38758990-0819-012c-3450-123456789012,,,Moro reflex incomplete,Incomplete,Moro reflex response is incomplete,Finding,N/A,,,1,1
+39869001-1920-123d-4561-234567890123,,,Moro reflex absent,Absent,Moro reflex response is absent,Finding,N/A,,,1,1
+41081223-3142-345f-6783-456789012345,,,Grasp reflex strong,Strong,Grasp reflex response is strong,Finding,N/A,,,1,1
+42192334-4253-4560-7894-567890123456,,,Grasp reflex weak,Weak,Grasp reflex response is weak,Finding,N/A,,,1,1
+43203445-5364-5671-8905-678901234567,,,Grasp reflex absent,Absent (2),Grasp reflex response is absent,Finding,N/A,,,1,1
+45425667-7586-7893-0127-890123456789,,,Suckling reflex sustained,Sustained,Suckling reflex response is sustained,Finding,N/A,,,1,1
+46536778-8697-890a-1238-901234567890,,,Suckling reflex unsustained,Unsustained,Suckling reflex response is unsustained,Finding,N/A,,,1,1
+47647889-9708-901b-2349-012345678901,,,Suckling reflex absent,Absent (3),Suckling reflex response is absent,Finding,N/A,,,1,1
+49869001-1920-123d-4561-234567890123,,,Pain absent,No pain,Patient reports no pain,Finding,N/A,,,1,1
+50970112-2031-234e-5672-345678901234,,,Mild pain reported,Mild pain,Patient reports mild pain,Finding,N/A,,,1,1
+51081223-3142-345f-6783-456789012345,,,Vitals Moderate pain,Moderate (2),Patient reports moderate pain,Finding,N/A,,,1,1
+52192334-4253-4560-7894-567890123456,,,Vitals Severe pain,Severe,Patient reports severe pain,Finding,N/A,,,1,1
+53203445-5364-5671-8905-678901234567,,,Worst pain,Worst,Patient reports worst possible pain,Finding,N/A,,,1,1
+9126c0d1-b99b-47f3-ab63-53201942c250,,,Vital sign for adolescents above 12,Adolescent vitals,Vital signs form template for adolescent patients above 12 years,Finding,N/A,,,1,1
+78575063-66d9-4822-bedf-769334a6a4bd,,,Vital sign for school-age 6-12,School-age vitals,Vital signs form template for school-age children 6-12 years,Finding,N/A,,,1,1
+01a2b3c4-d5e6-f789-0123-456789abffff,,,Vital sign for pre school children 3-6,Preschool vitals,Vital signs form template for preschool children 3-6 years,Finding,N/A,,,1,1
+bd710963-1b85-4598-8a86-517ec52e3145,,,Vital sign for toddlers 1-3yrs,Toddler vitals,Vital signs form template for toddlers 1-3 years,Finding,N/A,,,1,1
+8921fdf3-8ba9-466b-b803-6c83db614a69,,,Vital sign for infants,Infant vitals,Vital signs form template for infant patients,Finding,N/A,,,1,1
+3bcabb7a-e4ad-43ca-af78-7c55ac35dcc2,,,Vital sign for neonates,Neonate vitals,Vital signs form template for neonatal patients,Finding,N/A,,,1,1
+281f0520-af40-4399-9ab1-0bcce04ca74c,,,Premature vital sign,Premature vitals,Vital signs form template for premature infant patients,Finding,N/A,,,1,1
+54647889-9708-901b-2349-012345678902,,,WHO Pain Ladder treatment,WHO Pain Ladder,Treatment given according to WHO Pain Management Ladder protocol,Question,Text,,,1,1
+8b3c4d5e-6f70-8901-bcde-f23456789222,,,Malnutrition Edema grading,Edema grade,Assessment of edema grading for malnutrition evaluation,Question,Coded,54d6e7f8-9a0b-1c2d-3e4f-567890123456;65e7f890-ab1c-2d3e-4f56-78901234567a;76f89012-bc3d-4e5f-6789-012345678abc,,1,2
+0d4e5f60-7182-901c-3456-789abcdef012,,,Dermatosis grading assessment,Dermatosis grading,Question asking for dermatosis grading assessment result,Question,Coded,54d6e7f8-9a0b-1c2d-3e4f-567890123456;65e7f890-ab1c-2d3e-4f56-78901234567a;76f89012-bc3d-4e5f-6789-012345678abc,,1,2
+0b2c3d4e-5f60-789a-1234-56789abcdef0,,,MUAC Category,MUAC Category,Mid-upper arm circumference category for nutritional status assessment,Question,Coded,ad5e6f70-8192-0123-def4-56789012345a;be6f7081-9203-1234-ef56-789012345abc;cf708192-a314-2345-f678-90123456bcde,,1,2
+d0819203-b425-3456-0789-123456cdefab,,,Appetite test result,Appetite test,Assessment of child's appetite through standardized feeding test,Question,Coded,1f2e3d4c-5b6a-7980-cdef-123456789abc;2e3d4c5b-6a79-8091-def1-23456789abcd,,1,2
+10718293-a415-2345-6789-abcdef012345,,,General danger signs symptoms,Danger signs,Checkbox question for general danger signs symptoms in child,Question,Coded,11829304-b526-3456-789a-bcdef0123456;12930415-c637-4567-890b-cdef01234567;13a41526-d748-5678-901c-def012345678;14b52637-e859-6789-012d-ef0123456789;164482AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+19a7b8c9-3d0e-123f-567a-345678901234,,,Diarrhea symptoms checklist,Diarrhea symptoms,Checkbox question for diarrhea-related symptoms in child,Question,Coded,1aa8c9d0-4e1f-234a-678b-456789012345;1bb9d0e1-5f2a-345b-789c-567890123456;1cc0e1f2-6a3b-456c-890d-678901234567;1dd1f2a3-7b4c-567d-901e-789012345678;14b52637-e859-6789-012d-ef0123456789;11829304-b526-3456-789a-bcdef0123456,,1,2
+b2cb5463-77fb-4484-9d68-5c4d60f0f129,,,Fever detection method,Fever detection,Question asking how fever was detected in child assessment,Question,Coded,1ff3a4b5-9d6e-789f-123a-901234567890;2aa4b5c6-0e7f-890a-234b-012345678901;3bb5c6d7-1f8a-901b-345c-123456789012,,1,2
+4cc6d7e8-2a9b-012c-456d-234567890123,,,Microscopic malaria test result,Microscopic malaria,Question asking for microscopic malaria test result with parasite type,Question,Coded,5dd7e8f9-3b0c-123d-567e-345678901234;6ee8f9a0-4c1d-234e-678f-456789012345,,1,2
+73ffc7dc-b550-47af-b7e8-39655bf8a3c1,,,Fever symptoms checklist,Fever symptoms,Checkbox question for fever-related symptoms in child,Question,Coded,7aa9b0c1-5d2e-345f-789a-567890123456;8bb0c1d2-6e3f-456a-890b-678901234567;9cc1d2e3-7f4a-567b-901c-789012345678;0dd2e3f4-8a5b-678c-012d-890123456789;1ee3f4a5-9b6c-789d-123e-901234567890;2ff4a5b6-0c7d-890e-234f-012345678901;3aa5b6c7-1d8e-901f-345a-123456789012,,1,2
+03c4d5e6-f708-901b-2345-6789abcd0000,,,Ear symptoms checklist,Ear symptoms,Checkbox question for ear-related symptoms in child,Question,Coded,4aa6b7c8-2d9e-012f-456a-345678901234;5bb7c8d9-3e0f-123a-567b-456789012345;6cc8d9e0-4f1a-234b-678c-567890123456,,1,2
+0c3d4e5f-6071-890b-2345-6789abcdef01,,,Anemia assessment by pallor,Anemia check,Question asking for anemia assessment result based on pallor examination,Question,Coded,7dd9e0f1-5a2b-345c-789d-678901234567;8ee0f1a2-6b3c-456d-890e-789012345678;9ff1a2b3-7c4d-567e-901f-890123456789,,1,2
+f2a3b425-d647-5678-2901-3456efabcdef,,,Tuberculosis symptoms and risk factors checklist,TB symptoms,Checkbox question for tuberculosis symptoms and risk factors screening,Question,Coded,85822a93-0801-4787-8ec3-4f3d04e87e35;4c2a0bc4-6280-4695-b8fe-f44e1417e5ee;cb3719c5-239c-475a-ae8f-88c9b996bfa1;d746e6f4-1620-467e-9053-0f7e96f46912;82228be2-e916-4428-9aef-478c28a76844;4148ad41-be02-443d-b748-ff95f2f84eeb,,1,2
+0e5f6071-8293-012d-4567-89abcdef0123,,,Immunization status assessment,Immunization status,Question asking for child immunization status assessment for children under 24 months,Question,Coded,599fe157-a7f7-4c22-b270-9ce25aa31296;ae23be45-1581-40eb-9aad-771e58729802;256813f5-9123-42cb-a456-d51db0f0d8b3;d57ad0b9-5f5f-4887-a407-3d882b753cf3;34c6a35c-beb9-4d79-99ec-aa880fb067e5,,1,2
+c3d4e5f6-7081-9012-3456-789012abcd03,,,Facility ownership,Facility ownership,Type of ownership of healthcare facility where death occurred,Question,Coded,160480AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;163014AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;160479AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;d4e5f607-8192-0123-4567-890123abcd04,,1,2
+9637081a-6071-8901-2345-678901abcd0c,,,Gestation status,Gestation,Question asking about gestational age category,Question,Coded,0748192b-7182-9012-3456-789012abcd0d;1859203c-8293-0123-4567-890123abcd0e;2960314d-9304-1234-5678-901234abcd0f,,1,2
+7415869c-4859-6789-0123-456789abcd14,,,Membrane status,Membrane,Question asking about membrane status,Question,Coded,8526970d-5960-7890-1234-567890abcd15;9637081e-6071-8901-2345-678901abcd16;0748192f-7182-9012-3456-789012abcd17,,1,2
+5293647e-2637-4567-8901-234567abcd1c,,,Disposition plan,Plan,Question asking about patient disposition and management plan,Question,Coded,6304758f-3748-5678-9012-345678abcd1d;7415869a-4859-6789-0123-456789abcd1e;8526970b-5960-7890-1234-567890abcd1f;9637081c-6071-8901-2345-678901abcd20;0748192d-7182-9012-3456-789012abcd21,,1,2
+0d4e5f60-7182-9012-3456-789abcdef012,,,Time of Arrival,Arrival Time,Question asking about time of arrival categorized as day or night,Question,Coded,1e5f6071-8293-0123-4567-89abcdef0123;2f6071a2-9304-1234-5678-9abcdef01234,,1,2
+aa1b2c3d-4e5f-6789-0123-456789abcdef,,,Is the patient ambulatory,Ambulatory Status,Question asking if patient can walk or move independently,Question,Coded,160026AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;cc3d4e5f-6071-8901-2345-6789abcdef01,,1,2
+dd4e5f60-7182-9012-3456-789abcdef012,,,Condition of patient on arrival,Arrival Condition,Question asking about patient's medical condition upon arrival,Question,Coded,ee5f6071-8293-0123-4567-89abcdef0123;ff607182-9304-1234-5678-9abcdef01234,,1,2
+529a4b5c-6d7e-4567-890b-cdef01234567,,,Mode of Arrival,Arrival Mode,Method of transportation used by patient to arrive at facility,Question,Coded,6e74d8e2-dd0e-4747-a973-ae0dd2e820ca;74bc6d7e-8f90-6789-012d-ef0123456789;85cd7e8f-9001-789a-123e-f01234567890;96de8f90-0112-890b-234f-012345678901;4f694879-6290-411b-8140-b6562715854e;b8f00112-2334-012d-4560-234567890123;6745ba51-c881-403c-a294-a6fa014f3a8a;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+e1233445-5667-345f-7893-56789012345f,,,Origin Home,Origin,Question asking about patient's origin or home location,Question,Coded,f2344556-6778-4560-8904-6789012345f0;03455667-7889-5671-9015-789012345f01,,1,2
+69011223-3445-1237-5671-345f01234567,,,Source of Referral,Referral Source,Source facility or location from which patient was referred,Question,Coded,7a122334-4556-2348-6782-45f012345678;8b233445-5667-3459-7893-5f0123456789;3d449cb3-a97a-431c-9b4e-fd5ca6cf7114;9c344556-6778-4560-8904-f012345678a0;ad455667-7889-5671-9015-012345678a01;be566778-8990-6782-0126-12345678a012;cf677889-9001-7893-1237-2345678a0123,,1,2
+25899001-1223-9015-3459-9456789abcde,,,Red Triage Category,Red Triage,Critical emergency triage category requiring immediate attention,Question,Coded,be469783-7a7b-4e02-8088-ef4c5e56afb0;36900112-2334-0126-4560-a56789abcdef;2515ab83-19ce-499a-94d6-ca832c6d08f0,,1,2
+47011223-3445-1237-5671-b6789abcdef0,,,Orange Triage Category,Orange Triage,Urgent emergency triage category requiring prompt attention,Question,Coded,435e13d7-b208-4c57-be03-535109803155;d2e56e53-c517-4a78-8bd8-20deed1a5e8b;236dcf87-a1a9-44db-9c8e-d7059aab154a;58122334-4556-2348-6782-c789abcdef01;59233445-5667-3459-7893-d89abcdef012;c072c914-631b-4632-88a9-4ad09fe5de84;5a344556-6778-4560-8904-e9abcdef0123;425f6fc0-efad-4751-9fc9-76478fddbf4d;5b455667-7889-5671-9015-fabcdef01234;5c566778-8990-6782-0126-0bcdef012345;5d677889-9001-7893-1237-1cdef0123456;5e788990-0112-8904-2348-2def01234567;45997a6f-d7e3-41ac-bfbe-fa149ccd49b9;b6c7e832-6ac3-42fa-9886-eb3213e90a89;8b899001-1223-9015-3459-f56789a12345;d0344556-6778-4560-8904-49a123456789;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+60900112-2334-0126-4560-4f0123456789,,,Yellow Triage Category,Yellow Triage,Semi-urgent emergency triage category,Question,Coded,61011223-3445-1237-5671-5012345678a0;163483AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;9213a5f1-3a62-414d-a622-a4114fed96bd;4035722f-8d3c-49a6-9139-ae29e10fe57c;62122334-4556-2348-6782-612345678a01;63233445-5667-3459-7893-72345678a012;64344556-6778-4560-8904-8345678a0123;abe9b7fa-ec3c-4ec5-a401-2a019a280dca;39747d43-00bb-46eb-9551-790981786d14;65455667-7889-5671-9015-945678a01234;9c900112-2334-0126-4560-056789a12345;69677889-9001-7893-1237-d3456789a123;be122334-4556-2348-6782-2789a1234567;ad011223-3445-1237-5671-16789a123456,,1,2
+66566778-8990-6782-0126-a5678a012345,,,Green Triage Category,Green Triage,Non-urgent emergency triage category,Question,Coded,67677889-9001-7893-1237-b678a0123456,,1,2
+7e1f2a3b-4c5d-6789-0123-456789abcdef,,,RAT,RAT,Rapid Assessment Triage classification for emergency department patients,Question,Coded,8f2a3b4c-5d6e-7890-1234-567890abcdef;9a3b4c5d-6e7f-8901-2345-678901abcdef,,1,2
+1e6f7081-9203-1234-ef01-56789012345a,,,Users Type,Users Type,Classification of patient as existing or new family planning user,Question,Coded,6bee05c0-d9e0-4c5f-9a8a-3cbad70fdc9d;763a1d59-f3b5-492a-ba63-f0a1562ce441,,1,2
+4f8a2b1c-3d5e-4567-8901-234567890abc,,,FP Target Population Category,FP Target Pop Category,Classification of patient by target population category for family planning services,Question,Coded,160579AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;162198AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;7e9f1a2b-4c6d-5678-9012-345678901de0;162277AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1174AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;8f0a2b3c-5d7e-6789-0123-456789012e0a;9a1b3c4d-6e8f-7890-1234-567890123f0a;0b2c4d5e-7f9a-8901-2345-678901234a0b,,1,2
+3c4d5e6f-7081-9012-cdef-345678901234,,,ER General Notes Allergies,Allergy Type,Question asking about type of allergies for emergency room documentation,Question,Coded,139994AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;141760AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;4d5e6f70-8192-0123-def4-56789012345a;1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+c1d2e3f4-5a6b-7c8d-9e0f-1a2b3c4d5e6f,,,Image Video Set,Image/Video Set,Container set for image or video uploads in clinical encounters,ConvSet,N/A,,d2e3f4a5-6b7c-8d9e-0f1a-2b3c4d5e6f7a,1,2
+3081920a-1425-3456-0123-789012345678,,,Birth Weight Category,Birth weight category,Question asking about infant birth weight category classification,Question,Coded,4192031b-2536-4567-1234-890123456789;5203142c-3647-5678-2345-901234567890;6314253d-4758-6789-3456-012345678901,,1,2
+7425364e-5869-7890-4567-123456789012,,,Gestational Age Category,Gestational age (2),Question asking about infant gestational age category at birth,Question,Coded,8536475f-6970-8901-5678-234567890123;9647586a-7081-9012-6789-345678901234;0758697b-8192-0123-7890-456789012345;1869708c-9203-1234-8901-567890123456;2970819d-0314-2345-9012-678901234567;3081920e-1425-3456-0123-789012345678,,1,2
+4192031f-2536-4567-1234-890123456789,,,Breathing Problem Assessment,Breathing problem,Question asking about infant breathing problems during clinical assessment,Question,Coded,5203142a-3647-5678-2345-901234567890;6314253b-4758-6789-3456-012345678901;7425364c-5869-7890-4567-123456789012,,1,2
+6314253f-4758-6789-3456-012345678901,,,Feeding During Illness,Feeding illness,Question asking about feeding pattern during illness,Question,Coded,7425364a-5869-7890-4567-123456789012;8536475b-6970-8901-5678-234567890123,,1,2
+98f16ffe-7cbc-4390-a043-99ab1f0f8df7,,,Child feeding method,Feeding method,Question asking about child feeding method,Question,Coded,0758697d-8192-0123-7890-456789012345;1869708e-9203-1234-8901-567890123456;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+3081920b-1425-3456-0123-789012345678,,,Breastfeeding Attachment Assessment,Breastfeeding attachment,Question asking about breastfeeding attachment indicators during clinical assessment,Question,Coded,4192031c-2536-4567-1234-890123456789;5203142d-3647-5678-2345-901234567890;6314253e-4758-6789-3456-012345678901;7425364f-5869-7890-4567-123456789012,,1,2
+8536475a-6970-8901-5678-234567890123,,,Breastfeeding Attachment Type,Attachment type,Question asking about overall breastfeeding attachment quality assessment,Question,Coded,162305AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;9647586b-7081-9012-6789-345678901234,,1,2
+0758697a-8192-0123-7890-456789012345,,,Vitamin A Status of Mother,Vitamin A status,Question asking about vitamin A supplementation status of mother,Question,Coded,1869708b-9203-1234-8901-567890123456;2970819c-0314-2345-9012-678901234567,,1,2
+17edb9a1-bd0f-408f-871a-0000857b0227,,,Turgor skin pinch assessment,Skin turgor,Question asking about turgor or skin pinch test results,Question,Coded,eabc4230-3847-471c-b590-7554f75a672a;a40fdbf6-03a0-4769-b085-b0c52b6c0960,,1,2
+4938045b-3cd4-4a11-a544-84ffb3344dd5,,,Weight status for infant,Weight status infant,Question asking about infant weight status classification,Question,Coded,5203142e-3647-5678-2345-901234567890;500a5312-b28e-4a19-a602-48c81b033321,,1,2
+b4a9d9bf-1b74-4853-b55b-fe1123e560af,,,Feeding problems HIV positive mother,Feeding problems HIV,Question asking about feeding problems in HIV positive mother,Question,Coded,7425364b-5869-7890-4567-123456789012;8536475c-6970-8901-5678-234567890123;9647586d-7081-9012-6789-345678901234;0758697e-8192-0123-7890-456789012345;1869708f-9203-1234-8901-567890123456;22c555fe-de45-44b6-bf86-f485ad10150d;8b0e78c1-2594-4d14-bbc0-f888d4b8de44,,1,2
+2970819a-0314-2345-9012-678901234567,,,Breastfeeding Positioning Assessment,Breastfeeding positioning,Question asking about breastfeeding positioning during clinical assessment,Question,Coded,3c181ead-bfd7-4443-b8f4-08dcfac69b01;9a4073ad-f433-46ef-96ac-032a27173d7b,,1,2
+15c63748-f96a-789b-123e-f01234567890,,,Respiratory symptoms checklist,Respiratory symptoms,Checkbox question for respiratory symptoms in child with cough or difficulty breathing,Question,Coded,16d7485a-0a7b-890c-234f-012345678901;17e8596b-1b8c-901d-345f-123456789012;18f96a7c-2c9d-012e-456f-234567890123,,1,2
+8536475d-6970-8901-5678-234567890123,,,Signs and Symptoms Assessment,Signs symptoms,Question asking about clinical signs and symptoms in infant assessment,Question,Coded,9647586e-7081-9012-6789-345678901234;18f96a7c-2c9d-012e-456f-234567890123;b2c3d4e5-f607-8901-bcde-f23456789012;16d7485a-0a7b-890c-234f-012345678901;d4e5f607-1829-0123-def0-456789012345;0758697f-8192-0123-7890-456789012345;1869708a-9203-1234-8901-567890123456;2970819b-0314-2345-9012-678901234567;3081920c-1425-3456-0123-789012345678,,1,2
+14c5d647-f869-789a-4123-567abcdef012,,,Counseling topics for mother,Counsel mother,Topics to counsel mother about regarding child care and management,Question,Coded,25d6e758-0970-890b-5234-678bcdef0123;36e7f869-1a81-901c-6345-789cdef01234;58f9a2b3-4c5d-6e7f-8901-234567890def;1a7ccb02-9d98-4085-b5b0-ed66454d26de;5203142f-3647-5678-2345-901234567890,,2,2
+8637081a-6071-8901-2345-678901abcd22,,,Labor onset type,Labor onset,Question asking about type of labor onset including spontaneous induced augmented or elective cesarean section,Question,Coded,7728629a-1536-2457-7901-234678abcd37;8839730b-2647-3568-8012-345789abcd38;974808b2-7182-9012-3456-789012abcd23;9940841c-3758-4679-9123-456890abcd39,,1,2
+7a1b2c3d-4e5f-6789-0123-456789abcd01,,,Type of birth,Birth type,Question asking about type of birth including singleton twin or higher order multiple,Question,Coded,159913AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;159914AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;8b2c3d4e-5f60-7890-1234-567890abcd02,,1,2
+9c3d4e5f-6071-8901-2345-678901abcd03,,,Stillbirth type,Stillbirth type,Question asking about type of stillbirth classification,Question,Coded,0d4e5f60-7182-9012-3456-789012abcd04;1e5f6071-8293-0123-4567-890123abcd05;2f607182-9304-1234-5678-901234abcd06,,1,2
+4182b3c4-1526-3456-7890-123456abcd08,,,Essential Newborn Care,Essential newborn care,Question asking about essential newborn care interventions provided,Question,Coded,4293c4d5-2637-4567-8901-234567abcd08;5293c4d5-2637-4567-8901-234567abcd09;6293c4d5-2637-4567-8901-234567abcd10,,1,2
+742e6278-3bbb-4407-9872-c9ca5233c265,,,Emergency triage color assessment,Emergency color,Question asking for emergency triage color classification in pediatric assessment,Question,Coded,65a8c74c-544d-4517-8dc9-485efd819ff6;67792c5f-c3d0-42ef-b20b-a61c30d1fa9b;4da071fe-7089-4e59-b53b-df16d49337dd,,1,2
+7f3e9ba7-6bb6-49ba-8d87-db682b47e53e,,,Airway and breathing assessment,Airway breathing,Question asking about airway and breathing status in pediatric triage,Question,Coded,892f9568-5086-4148-af4c-7d14f7d2cfe8;58566778-8990-6782-0126-c23456789a12;7dcd7908-2118-43d3-b469-c90fb042836c,,1,2
+295e0f24-9d83-443a-b7dc-cefa9611891c,,,Circulation assessment pediatric,Circulation assessment,Question asking about circulation status in pediatric triage,Question,Coded,46beb2f8-f33e-4ea9-95ff-261d2ff61838;d3c2517d-049a-4258-8046-fbff8a9e0c86;ef376108-0270-4f68-9a61-3ee11adc1e1b,,1,2
+aec6f3c3-7c26-437f-a548-310bc05b7730,,,Severe dehydration assessment,Severe dehydration,Question asking about severe dehydration signs in child with diarrhea,Question,Coded,14b52637-e859-6789-012d-ef0123456789;1dd1f2a3-7b4c-567d-901e-789012345678;edbfc52e-de3e-45cf-b52b-3c4425c5a172,,1,2
+addb5c0b-04cf-449f-be9d-f217136cbbd6,,,Pediatric T assessment,Ped T assessment,Question asking about pediatric T assessment criteria in triage,Question,Coded,628b0af3-49e4-46f3-b093-178bd111eb7a;415daa59-d04f-4fde-88cc-5c92efd38e40;f8fbd69a-8ce5-4512-9750-5774f0293d23;25fe0585-30f9-4e28-a01a-15c3e40e3430;72d950f7-17c5-469d-abf0-8882d656e049,,1,2
+c148419f-665d-4174-b1db-8720e8fabfca,,,P assessment pediatric triage,P assessment,Question asking about P assessment criteria in pediatric triage,Question,Coded,5c401ca5-67d6-43b4-9bce-6189b62224df;2e9fb826-1b3d-45aa-b2ba-fb7f30e22e70,,1,2
+00c09597-1523-4f7b-bed0-f1aaf42e5a70,,,R assessment pediatric triage,R assessment,Question asking about R assessment criteria in pediatric triage,Question,Coded,88def9bc-6eba-433d-ae62-4cf563c00e9c;843b93f3-303a-4358-ae57-0ef855b5e79a;ad5d211b-1701-4cd0-b55b-dd681598ddc6,,1,2
+8cebdfa2-7251-4ada-8cb1-0079317d71cb,,,Underlying disease assessment,Underlying disease,Question asking about underlying disease in pediatric patient,Question,Coded,e5c23320-f757-46b0-988d-fffa549fba33;49b9a38b-76b2-4c53-89d2-cb9ff8ca3043;a66a20d9-aca4-473f-b5f1-935da7946c10;3596837f-d31d-40ee-82c1-ce0eeb15521f;e63c3415-62a0-4340-b416-0c190b8c7407;f25a277d-34b8-4258-9e5f-41b08bb36a90;3dfb1639-4e60-4877-a3ca-5e37356175f3;174c5baa-70b2-45e4-9a18-d1f2ccb70ceb,,1,2
+aca756e9-3483-4a53-95c4-9d79a0a819cb,,,General assessment pediatric,General assessment,Question asking about general assessment of pediatric patient,Question,Coded,9694701e-109a-41d3-8adb-8f07670fbcb5;7ccfb2a1-7fe8-4eb9-bd53-de250a2bc122;1a4c003c-3ed4-4776-8457-72c6bc50cb6c,,1,2
+55a15784-e60c-42c9-9a9b-6cddbe391cf9,,,Respiratory disease assessment,Respiratory disease,Question asking about respiratory disease severity,Question,Coded,c6728b6b-defe-4a20-a8c1-1137b381af71;ae48da34-3e5b-4c24-922c-aea87d92a373,,1,2
+1331d933-5a79-4b5e-80b2-565bd451400c,,,Dehydration assessment,Dehydration assessment,Question asking about dehydration severity,Question,Coded,c6728b6b-defe-4a20-a8c1-1137b381af71;ae48da34-3e5b-4c24-922c-aea87d92a373,,1,2
+45e4f3ee-af33-4723-bb45-5a28951300f0,,,Pain assessment,Pain assessment,Question asking about pain severity,Question,Coded,c6728b6b-defe-4a20-a8c1-1137b381af71;ae48da34-3e5b-4c24-922c-aea87d92a373,,1,2
+bc4adf02-67f8-42bc-ba82-b4be6cf44153,,,Triage level assessment,Triage level,Question asking about triage level classification,Question,Coded,668a4165-5515-405d-9fd1-d2aaedd1dbbd;f05aee3c-ba96-4a43-b0b4-2894db7999d0;ecee70d1-8ec1-42c4-9cc6-7ac6addf2517,,1,2
+63c3e397-bdd6-437a-b6d6-06725983e17f,,,Action to be taken assessment,Action to be taken,Question asking about action to be taken based on triage,Question,Coded,de95d3e4-063a-4be1-9b1e-b4c6d2450b2d;84a5ebff-f66e-466a-8aa9-ba9cba6842af,,1,2
+a1b2c3d4-5e6f-7890-1234-567890abcdef,,,Risk Group Classification,Risk Group,Question asking about patient risk group classification for HIV transmission,Question,Coded,b2c3d4e5-6f70-8901-2345-678901bcdef0;c3d4e5f6-7081-9012-3456-789012cdef01;d4e5f607-8192-0123-4567-890123def012;e5f60718-9203-1234-5678-901234ef0123;f6071829-0314-2345-6789-012345f01234;07182930-1425-3456-7890-123456012345;18293041-2536-4567-8901-234567123456;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+52637485-6970-8901-2345-678901567890,,,Breast Feeding Options for HIV Positive Mother,Breastfeeding Options,Question asking about breastfeeding options chosen by HIV positive mother,Question,Coded,63748596-7081-9012-3456-789012678901;74859607-8192-0123-4567-890123789012;85960718-9203-1234-5678-901234890123,,1,2
+f2637485-6970-8901-2345-678901567890,,,HIV Positive Identified During,HIV Positive During,Question asking during which period woman was identified as HIV positive,Question,Coded,03748596-7081-9012-3456-789012678901;14859607-8192-0123-4567-890123789012;25960718-9203-1234-5678-901234890123;36071829-0314-2345-6789-012345901234,,1,2
+92637485-6970-8901-2345-678901567890,,,Started ART During Period,Started ART During,Question asking during which period patient started antiretroviral therapy,Question,Coded,03748596-7081-9012-3456-789012678901;14859607-8192-0123-4567-890123789012;25960718-9203-1234-5678-901234890123;a3748596-7081-9012-3456-789012678901,,1,2
+c5960718-9203-1234-5678-901234890123,,,ART Regimen,ART Regimen,Question asking about antiretroviral therapy regimen prescribed,Question,Coded,d6071829-0314-2345-6789-012345901234;e7182930-1425-3456-7890-123456012345;5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;f8293041-2536-4567-8901-234567123456;09304152-3647-5678-9012-345678234567;10415263-4758-6789-0123-456789345678;21526374-5869-7890-1234-567890456789;32637485-6970-8901-2345-678901567890;43748596-7081-9012-3456-789012678901;54859607-8192-0123-4567-890123789012;65960718-9203-1234-5678-901234890123,,1,2
+98293041-2536-4567-8901-234567123456,,,Pregnancy Category for TB Treatment,Pregnancy Category,Question asking about pregnancy category for tuberculosis treatment safety,Question,Coded,a9304152-3647-5678-9012-345678234567;b0415263-4758-6789-0123-456789345678;c1526374-5869-7890-1234-567890456789;d2637485-6970-8901-2345-678901567890;e3748596-7081-9012-3456-789012678901;f4859607-8192-0123-4567-890123789012,,1,2
+16071829-0314-2345-6789-012345901234,,,Antepartum ART Status,Antepartum Status,Question asking about antiretroviral therapy status during antepartum period,Question,Coded,27182930-1425-3456-7890-123456012345;38293041-2536-4567-8901-234567123456;49304152-3647-5678-9012-345678234567;50415263-4758-6789-0123-456789345678;61526374-5869-7890-1234-567890456789;142934AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+45960718-9203-1234-5678-901234890123,,,Postpartum ART Status,Postpartum Status,Question asking about antiretroviral therapy status during postpartum period,Question,Coded,27182930-1425-3456-7890-123456012345;38293041-2536-4567-8901-234567123456;49304152-3647-5678-9012-345678234567;50415263-4758-6789-0123-456789345678;61526374-5869-7890-1234-567890456789;142934AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+72637485-6970-8901-2345-678901567890,,,Adherence Level,Adherence Level,Question asking about patient adherence level to antiretroviral therapy,Question,Coded,83748596-7081-9012-3456-789012678901;94859607-8192-0123-4567-890123789012;a5960718-9203-1234-5678-901234890123,,1,2
+b6071829-0314-2345-6789-012345901234,,,Delivery Type,Delivery Type,Question asking about type of delivery method used,Question,Coded,c7182930-1425-3456-7890-123456012345;d8293041-2536-4567-8901-234567123456;e9304152-3647-5678-9012-345678234567;f0415263-4758-6789-0123-456789345678,,1,2
+01526374-5869-7890-1234-567890456789,,,Baby Birth Status,Baby Birth Status,Question asking about birth status of baby,Question,Coded,12637485-6970-8901-2345-678901567890;23748596-7081-9012-3456-789012678901;34859607-8192-0123-4567-890123789012,,1,2
+0e758f90-0819-012c-3450-123456789012,,,Weight for age assessment,Weight for age,Assessment of weight for age using growth chart categories,Question,Coded,0f869001-1920-123d-4561-234567890123;10970112-2031-234e-5672-345678901234;11081223-3142-345f-6783-456789012345;12192334-4253-4560-7894-567890123456;13203445-5364-5671-8905-678901234567;14314556-6475-6782-9016-789012345678;15425667-7586-7893-0127-890123456789;16536778-8697-890a-1238-901234567890,,1,2
+17647889-9708-901b-2349-012345678901,,,Weight for height assessment,Weight for height,Assessment of weight for height using growth chart categories,Question,Coded,18758990-0819-012c-3450-123456789012;19869001-1920-123d-4561-234567890123;20970112-2031-234e-5672-345678901234;21081223-3142-345f-6783-456789012345;22192334-4253-4560-7894-567890123456;23203445-5364-5671-8905-678901234567;24314556-6475-6782-9016-789012345678;25425667-7586-7893-0127-890123456789,,1,2
+26536778-8697-890a-1238-901234567890,,,Height for age assessment,Height for age,Assessment of height for age using growth chart categories,Question,Coded,27647889-9708-901b-2349-012345678901;28758990-0819-012c-3450-123456789012;29869001-1920-123d-4561-234567890123;30970112-2031-234e-5672-345678901234;31081223-3142-345f-6783-456789012345;32192334-4253-4560-7894-567890123456;33203445-5364-5671-8905-678901234567;34314556-6475-6782-9016-789012345678,,1,2
+35425667-7586-7893-0127-890123456789,,,Moro reflex assessment,Moro reflex,Assessment of Moro reflex in neonates and infants,Question,Coded,36536778-8697-890a-1238-901234567890;37647889-9708-901b-2349-012345678901;38758990-0819-012c-3450-123456789012;39869001-1920-123d-4561-234567890123,,1,2
+40970112-2031-234e-5672-345678901234,,,Grasp reflex assessment,Grasp reflex,Assessment of grasp reflex in neonates and infants,Question,Coded,41081223-3142-345f-6783-456789012345;42192334-4253-4560-7894-567890123456;43203445-5364-5671-8905-678901234567,,1,2
+44314556-6475-6782-9016-789012345678,,,Suckling reflex assessment,Suckling reflex,Assessment of suckling reflex in neonates and infants,Question,Coded,45425667-7586-7893-0127-890123456789;46536778-8697-890a-1238-901234567890;47647889-9708-901b-2349-012345678901,,1,2
+48758990-0819-012c-3450-123456789012,,,Pain severity assessment,Pain severity,Assessment of pain severity using categorical scale,Question,Coded,49869001-1920-123d-4561-234567890123;50970112-2031-234e-5672-345678901234;51081223-3142-345f-6783-456789012345;52192334-4253-4560-7894-567890123456;53203445-5364-5671-8905-678901234567,,1,2
+a1b2c3d4-e5f6-7890-1234-567890abcdef,,,Select vital type,Vital type,Question asking user to select appropriate vital signs form based on patient age category,Question,Coded,3df0f2a1-2981-40b7-b7de-d7ed202e39e1;c23a7266-609f-4985-9bb4-037b34fed6f0;ccfd3dab-bab5-4503-a338-87e12bdefaea;9126c0d1-b99b-47f3-ab63-53201942c250;78575063-66d9-4822-bedf-769334a6a4bd;01a2b3c4-d5e6-f789-0123-456789abffff;bd710963-1b85-4598-8a86-517ec52e3145;8921fdf3-8ba9-466b-b803-6c83db614a69;3bcabb7a-e4ad-43ca-af78-7c55ac35dcc2;281f0520-af40-4399-9ab1-0bcce04ca74c,,1,2
+70566778-8990-6782-0126-4f5678abcde0,,,Triage Color Result,Triage Color,Final triage color category assigned to patient,Question,Coded,25899001-1223-9015-3459-9456789abcde;47011223-3445-1237-5671-b6789abcdef0;60900112-2334-0126-4560-4f0123456789;66566778-8990-6782-0126-a5678a012345;68788990-0112-8904-2348-c78a01234567,,1,3
+d9e8f7a6-b5c4-4d3e-8f2a-1b2c3d4e5f6a,,,Urine ketone value,Urine ketone value,Urine ketone measurement or value recorded during diabetic ketoacidosis follow-up monitoring,Question,Numeric,,,1,1
+e0f9a8b7-c6d5-4e4f-9a3b-2c3d4e5f6a7b,,,Insulin regimen or dose,DKA insulin,Insulin regimen dose or administration notes documented during diabetic ketoacidosis follow-up,Question,Text,,,1,2
+5bbbe370-d3ff-4526-a63b-df5c579ca30c,,,Date form filled in,Date form filled,Date when the form was completed or filled in by the provider,Question,Date,,,1,1
+6c657a58-03d9-4b45-8240-ac5b56fb2982,,,Blood donor pack number,Donor pack no.,Unique identification number of the blood donor pack used for transfusion,Question,Text,,,1,2
+49e8bb0a-9c58-436b-bcf3-9adebf401f7b,,,Ward patient admitted at,Ward,Ward or unit where the patient was admitted for care,Question,Text,,,1,2
+d691c207-17db-4847-b898-f5d7faa71f71,,,Presence of reaction,Reaction,Whether a transfusion reaction was observed at this assessment time point,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e,,,IUCD contraindication present,IUCD contraindicated,Question asking whether patient has contraindications for intrauterine contraceptive device,Question,Coded,1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+ad858385-1e6a-4bbc-8bb7-d11756d4397f,,,PICT Counseling/Testing Result,PICT,Provider Initiated Counseling and Testing for HIV result,Question,Coded,1228AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA;1229AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,,1,2
+f6071829-0314-2345-6789-012345abcd16,,,Patient bed number,Bed number,Bed number where patient was admitted in the healthcare facility,Question,Text,,,1,1

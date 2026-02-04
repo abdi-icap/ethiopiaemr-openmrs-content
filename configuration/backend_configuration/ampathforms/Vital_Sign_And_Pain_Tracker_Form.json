@@ -1,0 +1,311 @@
+{
+  "name": "Vital Sign and Pain Tracker Form",
+  "description": "Vital signs monitoring with pain assessment and treatment tracking",
+  "version": "1.0",
+  "published": true,
+  "uuid": "d4590b08-a83e-4889-a4f8-d210288d71ce",
+  "retired": false,
+  "encounter": "Vitals",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Vital Sign and Pain Tracker Form",
+      "sections": [
+        {
+          "label": "Date and Time",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date and Time",
+              "type": "obs",
+              "required": true,
+              "id": "painDateTime",
+              "questionOptions": {
+                "rendering": "datetime",
+                "concept": "162869AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Pulse Rate",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Pulse Rate",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerPulse",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5087AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 60-100 bpm",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 100.5 || myValue < 59.5)",
+                "message": "Pulse is out of range (Normal range 60-100)"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Blood Pressure",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Systolic",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerSystolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 90-140 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 140.5 || myValue < 89.5)",
+                "message": "Systolic is out of range (Normal range 90-140)"
+              }
+            },
+            {
+              "label": "Diastolic",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerDiastolic",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5086AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 60-90 mmHg",
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 90.5 || myValue < 59.5)",
+                "message": "Diastolic is out of range (Normal range 60-90)"
+              }
+            },
+            {
+              "label": "Posture",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerPosture",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "159633AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "label": "Sitting",
+                    "concept": "159630AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  },
+                  {
+                    "label": "Supine",
+                    "concept": "159629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Vitals",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Temperature",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerTemperature",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5088AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "25",
+                "max": "43"
+              },
+              "questionInfo": "Normal range: 36.5-37.5°C",
+              "validators": [],
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 38.0 || myValue < 36.0)",
+                "message": "Temperature is out of range (Normal range 36.5-37.5)"
+              }
+            },
+            {
+              "label": "Respiratory Rate",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerRespiratoryRate",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "5242AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "min": "0"
+              },
+              "questionInfo": "Normal range: 12-20 breaths/min",
+              "validators": [],
+              "alert": {
+                "alertWhenExpression": "myValue && (myValue >= 20.5 || myValue < 11.5)",
+                "message": "Respiratory Rate is out of range (Normal range 12-20)"
+              }
+            },
+            {
+              "label": "SPO2",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerSPO2",
+              "questionOptions": {
+                "concept": "5092AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "number",
+                "min": "0",
+                "max": "100"
+              },
+              "questionInfo": "Normal: ≥90%",
+              "validators": [],
+              "alert": {
+                "alertWhenExpression": "myValue && myValue < 89.5",
+                "message": "Oxygen Saturation is out of range (Normal range ≥90)"
+              }
+            },
+            {
+              "label": "Weight",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerWeight",
+              "questionOptions": {
+                "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "number"
+              },
+              "validators": []
+            },
+            {
+              "label": "Fluid Inputs",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerFluidInputs",
+              "questionOptions": {
+                "concept": "163036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "number"
+              }
+            },
+            {
+              "label": "Fluid Outputs",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerFluidOutputs",
+              "questionOptions": {
+                "concept": "163036AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "rendering": "number"
+              }
+            },
+            {
+              "label": "RBS/FBS",
+              "type": "obs",
+              "required": false,
+              "id": "painTrackerGlucose",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "887AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              }
+            },
+            {
+              "label": "Glasgow Coma Scale",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "160347AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "glasgowComaScale"
+            },
+            {
+              "label": "Pain Scale",
+              "type": "obs",
+              "required": true,
+              "id": "painScale",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "48758990-0819-012c-3450-123456789012",
+                "answers": [
+                  {
+                    "concept": "49869001-1920-123d-4561-234567890123",
+                    "label": "No Pain"
+                  },
+                  {
+                    "concept": "50970112-2031-234e-5672-345678901234",
+                    "label": "Mild"
+                  },
+                  {
+                    "concept": "51081223-3142-345f-6783-456789012345",
+                    "label": "Moderate"
+                  },
+                  {
+                    "concept": "52192334-4253-4560-7894-567890123456",
+                    "label": "Severe"
+                  },
+                  {
+                    "concept": "53203445-5364-5671-8905-678901234567",
+                    "label": "Worst"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Rx Given by WHO Ladder",
+              "type": "obs",
+              "required": false,
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "54647889-9708-901b-2349-012345678902",
+                "rows": "3"
+              },
+              "id": "whoPainLadder"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": []
+}

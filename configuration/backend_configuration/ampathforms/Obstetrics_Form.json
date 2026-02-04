@@ -1,0 +1,135 @@
+{
+  "name": "Emergency Labor/Obstetrics Form",
+  "description": "Obstetrics Form migrated from Bahmni",
+  "version": "1",
+  "published": true,
+  "uuid": "e16b3e3a-c33c-47b6-aec8-864398c6b802",
+  "encounter": "Triage",
+  "pages": [
+    {
+      "label": "Visit Details",
+      "sections": [
+        {
+          "label": "Encounter Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Visit date:",
+              "type": "encounterDatetime",
+              "required": "true",
+              "id": "encDate",
+              "questionOptions": {
+                "rendering": "date"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ]
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "required": "true",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "P/A (PER ABDOMEN)",
+      "sections": [
+        {
+          "label": "Physical Examination - Per Abdomen",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Fundal Height (Weeks)",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "number",
+                "concept": "1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "fundal_height_weeks"
+            },
+            {
+              "label": "P/A Presenting Part",
+              "type": "obs",
+              "required": "false",
+              "id": "presentingPart",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "160090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "answers": [
+                  {
+                    "concept": "160091AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Cephalic"
+                  },
+                  {
+                    "concept": "139814AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Breech"
+                  },
+                  {
+                    "concept": "124261AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Transverse"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "FHS",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "cefe2cf4-eace-442a-8ca6-730997ce1eb5",
+                "answers": [
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Present"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Absent"
+                  }
+                ]
+              },
+              "id": "fhs"
+            },
+            {
+              "label": "LMP",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+              },
+              "id": "lmp"
+            },
+            {
+              "label": "Amount of Liquor",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "textarea",
+                "concept": "ffdae04b-b351-4a8d-9368-4658c4e52f49"
+              },
+              "id": "amount_of_liquor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
