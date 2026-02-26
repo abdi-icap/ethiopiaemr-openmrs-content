@@ -146,8 +146,31 @@
             "Display conditions": {
               "privileges": ["o3: Mark Patient As Alive/Dead"]
             }
+          },
+          "start-visit-button": {
+            "Display conditions": {
+              "privileges": ["o3: CheckIn Patient"]
+            }
+          },
+          "start-visit-button2": {
+            "Display conditions": {
+              "privileges": ["o3: CheckIn Patient"]
+            }
+          },
+          "stop-visit-button": {
+            "Display conditions": {
+              "privileges": ["o3: CheckOut Patient"]
+            }
+          },
+          "mark-alive-button": {
+            "Display conditions": {
+              "privileges": ["o3: Mark Patient As Alive/Dead"]
+            }
           }
-        }
+        },
+        "remove": [
+          "mortuary-mark-patient-deceased-button"
+        ]
       },
       "patient-banner-tags-slot": {
         "remove": ["patient-info-sha-status"]
@@ -156,6 +179,11 @@
   },
   "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
+      "patient-chart": {
+        "remove": [
+          "patient-chart-order-basket"
+        ]
+      },
       "top-of-all-patient-dashboards-slot": {
         "configure": {
           "patient-flag": {
@@ -171,7 +199,7 @@
           "patient-vitals-info": {
             "Display conditions": {
               "privileges": [
-                "o3: View Patient Chart Vitals & Biometrics Dashboard"
+                "o3: View Patient Vitals and Biometrics"
               ]
             }
           }
@@ -247,6 +275,20 @@
       },
       "visit-form-bottom-slot": {
         "remove": ["custom-visit-form-queue-fields", "visit-form-queue-fields"]
+      },
+      "visit-detail-overview-actions": {
+        "configure": {
+          "edit-visit-action-button": {
+            "Display conditions": {
+              "privileges": ["o3: Edit Visit"]
+            }
+          },
+          "delete-visit-action-button": {
+            "Display conditions": {
+              "privileges": ["o3: Delete Visit"]
+            }
+          }
+        }
       }
     },
     "showExtraVisitAttributesSlot": true,
@@ -699,7 +741,7 @@
           "results-summary-dashboard": {
             "Display conditions": {
               "privileges": [
-                "o3: View Patient Chart Vitals & Biometrics Dashboard"
+                "o3: View Patient Vitals and Biometrics"
               ]
             }
           }
