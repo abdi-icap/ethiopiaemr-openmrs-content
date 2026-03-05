@@ -179,7 +179,8 @@
     "extensionSlots": {
       "patient-chart": {
         "remove": [
-          "patient-chart-order-basket"
+          "patient-chart-order-basket",
+          "patient-chart-clinical-forms"
         ]
       },
       "top-of-all-patient-dashboards-slot": {
@@ -608,6 +609,11 @@
           "patient-scoreboard-link": {
             "Display conditions": {
               "privileges": ["ethiopiaemr: View Patient Scoreboard"]
+            }
+          },
+          "pharmacy-homepage-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: Pharmacy"]
             }
           }
         }
