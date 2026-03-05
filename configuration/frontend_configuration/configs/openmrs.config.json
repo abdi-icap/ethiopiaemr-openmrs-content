@@ -131,7 +131,7 @@
     },
     "extensionSlots": {
       "patient-actions-slot": {
-        "remove": ["delete-visit-button"],
+        "remove": ["delete-visit-button", "mortuary-mark-patient-deceased-button"],
         "configure": {
           "delete-visit-button": {
             "Display conditions": {
@@ -168,10 +168,7 @@
               "privileges": ["o3: Mark Patient As Alive/Dead"]
             }
           }
-        },
-        "remove": [
-          "mortuary-mark-patient-deceased-button"
-        ]
+        }
       },
       "patient-banner-tags-slot": {
         "remove": ["patient-info-sha-status"]
