@@ -131,7 +131,10 @@
     },
     "extensionSlots": {
       "patient-actions-slot": {
-        "remove": ["delete-visit-button", "mortuary-mark-patient-deceased-button"],
+        "remove": [
+          "delete-visit-button",
+          "mortuary-mark-patient-deceased-button"
+        ],
         "configure": {
           "delete-visit-button": {
             "Display conditions": {
@@ -178,10 +181,7 @@
   "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
       "patient-chart": {
-        "remove": [
-          "patient-chart-order-basket",
-          "patient-chart-clinical-forms"
-        ]
+        "remove": ["patient-chart-order-basket", "patient-chart-clinical-forms"]
       },
       "top-of-all-patient-dashboards-slot": {
         "configure": {
@@ -197,9 +197,7 @@
         "configure": {
           "patient-vitals-info": {
             "Display conditions": {
-              "privileges": [
-                "o3: View Patient Vitals and Biometrics"
-              ]
+              "privileges": ["o3: View Patient Vitals and Biometrics"]
             }
           }
         }
@@ -727,9 +725,7 @@
           },
           "results-summary-dashboard": {
             "Display conditions": {
-              "privileges": [
-                "o3: View Patient Vitals and Biometrics"
-              ]
+              "privileges": ["o3: View Patient Vitals and Biometrics"]
             }
           }
         }
@@ -753,11 +749,6 @@
   "@openmrs/esm-stock-management-app": {
     "Display conditions": {
       "privileges": ["o3: Manage Stocks"]
-    }
-  },
-  "@openmrs/esm-ward-app": {
-    "Display conditions": {
-      "privileges": ["o3: View Ward Dashboard"]
     }
   },
   "core": {
