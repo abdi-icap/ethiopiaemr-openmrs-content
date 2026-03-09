@@ -131,7 +131,10 @@
     },
     "extensionSlots": {
       "patient-actions-slot": {
-        "remove": ["delete-visit-button"],
+        "remove": [
+          "delete-visit-button",
+          "mortuary-mark-patient-deceased-button"
+        ],
         "configure": {
           "delete-visit-button": {
             "Display conditions": {
@@ -168,8 +171,7 @@
               "privileges": ["o3: Mark Patient As Alive/Dead"]
             }
           }
-        },
-        "remove": ["mortuary-mark-patient-deceased-button"]
+        }
       },
       "patient-banner-tags-slot": {
         "remove": ["patient-info-sha-status"]
@@ -179,7 +181,7 @@
   "@openmrs/esm-patient-chart-app": {
     "extensionSlots": {
       "patient-chart": {
-        "remove": ["patient-chart-order-basket"]
+        "remove": ["patient-chart-order-basket", "patient-chart-clinical-forms"]
       },
       "top-of-all-patient-dashboards-slot": {
         "configure": {
@@ -606,6 +608,11 @@
             "Display conditions": {
               "privileges": ["ethiopiaemr: View Patient Scoreboard"]
             }
+          },
+          "pharmacy-homepage-dashboard-link": {
+            "Display conditions": {
+              "privileges": ["o3: Pharmacy"]
+            }
           }
         }
       },
@@ -742,11 +749,6 @@
   "@openmrs/esm-stock-management-app": {
     "Display conditions": {
       "privileges": ["o3: Manage Stocks"]
-    }
-  },
-  "@kenyaemr/esm-ward-app": {
-    "Display conditions": {
-      "privileges": ["o3: View Ward Dashboard"]
     }
   },
   "core": {
