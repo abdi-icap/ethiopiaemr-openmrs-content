@@ -1,5 +1,4 @@
 {
-
   "@palladium-ethiopia/esm-billing-app": {
     "extensionSlots": {
       "billing-dashboard-slot": {},
@@ -7,51 +6,37 @@
         "configure": {
           "payments-points-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Payment Point"
-              ]
+              "privileges": ["ethioemr: Billing: View Payment Point"]
             }
           },
           "payment-mode-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Payment Mode"
-              ]
+              "privileges": ["ethioemr: Billing: View Payment Mode"]
             }
-          },          
+          },
           "bill-deposit-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Deposit"
-              ]
+              "privileges": ["ethioemr: Billing: View Deposit"]
             }
           },
           "billable-exemptions-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Exemptions Schema"
-              ]
+              "privileges": ["ethioemr: Billing: View Exemptions Schema"]
             }
           },
           "clinical-charges-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Charge Items"
-              ]
+              "privileges": ["ethioemr: Billing: View Charge Items"]
             }
           },
           "payment-history-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Payment History"
-              ]
+              "privileges": ["ethioemr: Billing: View Payment History"]
             }
           },
           "patient-billing-dashboard-link": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: View Bill Manager"
-              ]
+              "privileges": ["ethioemr: Billing: View Bill Manager"]
             }
           }
         }
@@ -60,16 +45,12 @@
         "configure": {
           "waive-bill-action-button": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: Waive Bill"
-              ]
+              "privileges": ["ethioemr: Billing: Waive Bill"]
             }
           },
           "delete-bill-action-button": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: Delete Bill"
-              ]
+              "privileges": ["ethioemr: Billing: Delete Bill"]
             }
           }
         }
@@ -78,23 +59,17 @@
         "configure": {
           "refund-line-item": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: Refund Line Item"
-              ]
+              "privileges": ["ethioemr: Billing: Refund Line Item"]
             }
           },
           "edit-line-item": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: Edit Bill Item"
-              ]
+              "privileges": ["ethioemr: Billing: Edit Bill Item"]
             }
           },
           "cancel-line-item": {
             "Display conditions": {
-              "privileges": [
-                "ethioemr: Billing: Cancel Bill Item"
-              ]
+              "privileges": ["ethioemr: Billing: Cancel Bill Item"]
             }
           }
         }
@@ -188,7 +163,12 @@
     "drugOrderTypeUuid": "131168f4-15f5-102d-96e4-000c29c2a5d7",
     "bloodTypeAttributeTypeUuid": "65d4a066-15f5-221a-96e4-000c29c2a1dd",
     "phoneAttributeTypeUuid": "b2c38640-2603-4629-aebd-3b54f33f1e3a",
-    "emailAttributeTypeUuid": "b8d0b331-1d2d-4a9a-b741-1816f498bdb6"
+    "emailAttributeTypeUuid": "b8d0b331-1d2d-4a9a-b741-1816f498bdb6",
+    "extensionSlots": {
+      "ward-add-patient-to-ward-inner-slot": {
+        "add": ["create-admission-request-workspace-siderail-button"]
+      }
+    }
   },
   "@palladium-ethiopia/esm-patient-orders-app": {
     "showReferenceNumberField": false,
