@@ -46,5 +46,32 @@ Complete blood count,Reticulocytes (%),concept-set,36,,2
 Complete blood count,Immature Reticulocyte Fraction,concept-set,37,,2
 Complete blood count,Mean Reticulocyte Volume,concept-set,38,,2
 Complete blood count,Reticulocyte Hemoglobin Equivalent,concept-set,39,,2
-Urinalysis Microscopy,Urine routine and microscopy,concept-set,1,,1
-Urinalysis Microscopy,Urine microscopy,concept-set,2,,1
+Liver function tests,Total bilirubin,concept-set,1,,1
+Liver function tests,Serum glutamic-pyruvic transaminase,concept-set,2,,1
+Liver function tests,Serum glutamic-oxaloacetic transaminase,concept-set,3,,1
+Liver function tests,Alkaline phosphatase,concept-set,4,,1
+Liver function tests,Total protein,concept-set,5,,1
+Liver function tests,Serum albumin,concept-set,6,,1
+Liver function tests,Direct bilirubin,concept-set,7,,1
+Liver function tests,Globulin,concept-set,8,,1
+Liver function tests,Albumin/Globulin ratio,concept-set,9,,1
+Routine urine,Urine pH,concept-set,1,,1
+Routine urine,Urine specific gravity,concept-set,2,,1
+Routine urine,Urine protein (dipstick),concept-set,3,,1
+Routine urine,Urine glucose (dipstick),concept-set,4,,1
+Routine urine,Urine ketones,concept-set,5,,1
+Routine urine,Urine blood (dipstick),concept-set,6,,1
+Routine urine,Urine bilirubin,concept-set,7,,1
+Routine urine,Urobilinogen presence in urine test,concept-set,8,,1
+Routine urine,Urine nitrite,concept-set,9,,1
+Routine urine,Urine leukocyte esterase test,concept-set,10,,1
+Semen Analysis,Semen analysis,concept-set,1,,1
+Semen Analysis,Semen color,concept-set,2,,1
+Semen Analysis,Liquefaction [time] in semen,concept-set,3,,1
+Semen Analysis,Semen pH,concept-set,4,,1
+Semen Analysis,Semen fructose level,concept-set,5,,1
+Semen Analysis,Semen volume,concept-set,6,,1
+Semen Analysis,sperm count,concept-set,7,,1
+Semen Analysis,Percentage of normal spermatozoa in semen,concept-set,8,,1
+Semen Analysis,Spermatozoa motility,concept-set,9,,1
+
