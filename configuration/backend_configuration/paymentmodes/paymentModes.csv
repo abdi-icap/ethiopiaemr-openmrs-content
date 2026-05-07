@@ -1,5 +1,5 @@
 Uuid,Void/Retire,Name,Description,Retired,attributes
-2a1b6a1d-3f35-4f0a-8b39-5e4f9efc1a01,,Cash,Cash payment method,false,
+2a1b6a1d-3f35-4f0a-8b39-5e4f9efc1a01,,Payer: cash/digital payment,Payer: cash/digital payment,false,
 2c3d1c4c-12f4-43c4-9d6f-9fb4d0480a7e,,CBHI,Community Based Health Insurance payment method,false,
 3d9a4c1b-1c2e-4d45-9d06-8c26d1b8d3a2,,SHI,Social Health Insurance payment method,false,
 4d0d1d2e-8d9f-4d2a-8a1d-8a1fbdcbf0c9,,Agreement,Agreement payment method,false,
