@@ -37,7 +37,7 @@
               "questionOptions": {
                 "rendering": "ui-select-extended"
               },
-              "id": "encProvider ",
+              "id": "encProvider",
               "readonly": false
             },
             {

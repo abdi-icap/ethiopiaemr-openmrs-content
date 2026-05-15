@@ -27,7 +27,8 @@
                   "type": "date",
                   "allowFutureDates": "false"
                 }
-              ]
+              ],
+              "required": "true"
             },
             {
               "label": "Provider:",
@@ -36,7 +37,8 @@
               "readonly": false,
               "questionOptions": {
                 "rendering": "ui-select-extended"
-              }
+              },
+              "required": "true"
             },
             {
               "label": "Location:",
@@ -44,8 +46,15 @@
               "id": "encLocation",
               "readonly": false,
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "datasource": {
+                  "name": "location_datasource",
+                  "config": {
+                    "tag": "Login Location"
+                  }
+                }
+              },
+              "required": "true"
             }
           ]
         }
