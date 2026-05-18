@@ -177,9 +177,11 @@
                       "id": "nurseName",
                       "questionOptions": {
                         "rendering": "ui-select-extended",
-                        "concept": "166692AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                        "concept": "166692AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "isSearchable": true
                       },
-                      "validators": []
+                      "validators": [],
+                      "readonly": false
                     },
                     {
                       "label": "Date and Time",

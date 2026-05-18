@@ -516,8 +516,10 @@
               "required": false,
               "id": "midwifeName",
               "questionOptions": {
-                "rendering": "ui-select-extended"
-              }
+                "rendering": "ui-select-extended",
+                "isSearchable": true
+              },
+              "readonly": false
             }
           ]
         }
