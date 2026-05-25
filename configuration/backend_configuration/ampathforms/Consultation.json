@@ -4,7 +4,7 @@
   "version": "1",
   "description": "Inter-department consultation form used when one clinician requests consultation from another department.",
   "processor": "EncounterFormProcessor",
-  "encounterType": "4723cf17-ff74-43d7-ad36-829e555fbc60",
+  "encounter": "Inter-department Consultation",
   "published": true,
   "retired": false,
   "referencedForms": [],
@@ -25,25 +25,6 @@
               "id": "consultingDepartment",
               "label": "Consulting Department",
               "required": true
-            },
-            {
-              "type": "encounterProvider",
-              "questionOptions": {
-                "rendering": "ui-select-extended",
-                "concept": "c3b0fd57-2b40-4f4a-ad8b-0b9fe63563c0",
-                "isSearchable": false
-              },
-              "id": "consultingPhysician",
-              "label": "Consulting Physician"
-            },
-            {
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "text",
-                "concept": "ae3435ab-fc9d-4032-931b-67494c0a7004"
-              },
-              "id": "erWard",
-              "label": "ER/Ward"
             },
             {
               "type": "encounterLocation",
@@ -127,44 +108,6 @@
               },
               "id": "recommendation",
               "label": "Recommendation"
-            },
-            {
-              "type": "encounterProvider",
-              "questionOptions": {
-                "rendering": "ui-select-extended",
-                "concept": "20a11418-e24f-434f-bfab-3ecebecef094"
-              },
-              "id": "consultedPhysician",
-              "label": "Consulted Physician"
-            },
-            {
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "radio",
-                "concept": "0ac233e1-3654-4afb-9436-8c7dd9eb0069",
-                "answers": [
-                  {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "Yes"
-                  },
-                  {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                    "label": "No"
-                  }
-                ]
-              },
-              "id": "markAsCompleted",
-              "label": "Mark as Completed"
-            },
-            {
-              "type": "obs",
-              "questionOptions": {
-                "rendering": "datetime",
-                "concept": "4619ace7-4a24-408e-b6c7-c8c9215b34eb"
-              },
-              "id": "timeEvaluated",
-              "label": "Time Evaluated",
-              "datePickerFormat": "both"
             }
           ]
         }
