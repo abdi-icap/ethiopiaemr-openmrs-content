@@ -17,7 +17,7 @@
     "@openmrs/esm-patient-orders-app": "next",
     "@openmrs/esm-patient-notes-app": "latest",
     "@openmrs/esm-patient-attachments-app": "latest",
-    "@openmrs/esm-patient-medications-app": "latest",
+    "@palladium-ethiopia/esm-patient-medications-app": "next",
     "@openmrs/esm-patient-chart-app": "latest",
     "@openmrs/esm-laboratory-app": "latest",
     "@openmrs/esm-dispensing-app": "latest",
@@ -40,6 +40,7 @@
     "@kenyaemr/esm-procedure-orders-app": "next",
     "@palladium-ethiopia/esm-admin-app": "next",
     "@kenyaemr/esm-patient-flags-app": "next",
+    "@kenyaemr/esm-stock-management-app": "next",
     "@palladium-ethiopia/esm-clinical-workflow-app": "next",
     "@palladium-ethiopia/esm-consultation-app": "next",
     "@palladium-ethiopia/esm-order-catalog-ethio-app": "next"
@@ -49,7 +50,8 @@
   "configUrls": [
     "${openmrsSpaBase}/kenyaemr.config.json",
     "${openmrsSpaBase}/openmrs.config.json",
-    "${openmrsSpaBase}/patient-chart-am.json"
+    "${openmrsSpaBase}/patient-chart-am.json",
+    "${openmrsSpaBase}/ethiopiaemr.config.json"
   ],
   "importmap": "/openmrs/spa/importmap.json"
 }
