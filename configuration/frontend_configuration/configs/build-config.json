@@ -29,7 +29,7 @@
     "@kenyaemr/esm-bed-management-app": "next",
     "@openmrs/esm-service-queues-app": "latest",
     "@kenyaemr/esm-patient-search-app": "next",
-    "@kenyaemr/esm-appointments-app": "next",
+    "@openmrs/esm-appointments-app": "next",
     "@palladium-ethiopia/esm-patient-registration-app": "next",
     "@kenyaemr/esm-login-app": "latest",
     "@kenyaemr/esm-version-app": "next",
@@ -43,7 +43,8 @@
     "@kenyaemr/esm-stock-management-app": "next",
     "@palladium-ethiopia/esm-clinical-workflow-app": "next",
     "@palladium-ethiopia/esm-consultation-app": "next",
-    "@palladium-ethiopia/esm-order-catalog-ethio-app": "next"
+    "@palladium-ethiopia/esm-order-catalog-ethio-app": "next",
+    "@palladium-ethiopia/esm-appointments-admin-app": "next"
   },
   "spaPath": "/openmrs/spa",
   "apiUrl": "/openmrs",

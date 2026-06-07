@@ -233,5 +233,8 @@
         }
       }
     }
+  },
+  "@palladium-ethiopia/esm-appointments-admin-app": {
+    "appointmentServiceAdminPrivilege": "app:appointments:manageServiceAvailability"
   }
 }

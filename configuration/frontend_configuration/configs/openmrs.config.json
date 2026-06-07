@@ -128,6 +128,21 @@
       }
     }
   },
+  "@openmrs/esm-appointments-app": {
+    "includePhoneNumberInExcelSpreadsheet": true,
+    "allowAllDayAppointments": true,
+    "patientIdentifierType": "Unique Patient Number",
+    "showUnscheduledAppointmentsTab": false,
+    "showEarlyAppointmentsTab": false,
+    "appointmentStatuses": ["Scheduled"],
+    "appointmentTypes": ["Scheduled"],
+    "checkInButton": {
+      "enabled": false
+    },
+    "checkOutButton": {
+      "enabled": false
+    }
+  },
   "@openmrs/esm-laboratory-app": {
     "extensionSlots": {
       "tests-ordered-actions-slot": {
