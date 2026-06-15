@@ -65,10 +65,15 @@
             "Display conditions": {
               "privileges": ["ethiopiaemr: View Reports Dashboard"]
             }
+          },
+          "orders-admin-nav-link": {
+            "Display conditions": {
+              "privileges": ["Manage OrderTemplates"]
+            }
+          }
         }
       }
     }
-  }
   },
   "@kenyaemr/esm-imaging-orders-app": {
     "extensionSlots": {
