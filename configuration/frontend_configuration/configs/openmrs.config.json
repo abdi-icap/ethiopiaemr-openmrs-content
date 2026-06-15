@@ -692,6 +692,11 @@
               "privileges": ["ethiopiaemr: Triage: View Gynecological Triage Dashboard"]
             }
           },
+          "clinical-workflow-triage-hp-link-psychiatry": {
+            "Display conditions": {
+              "privileges": ["ethiopiaemr: Triage: View Psychiatry Triage Dashboard"]
+            }
+          },
           "ewf-mru-dashboard-link": {
             "Display conditions": {
               "privileges": ["ethiopiaemr: MRU: View MRU"]
