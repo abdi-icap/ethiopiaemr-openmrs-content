@@ -45,7 +45,8 @@
     "@palladium-ethiopia/esm-consultation-app": "next",
     "@palladium-ethiopia/esm-order-catalog-ethio-app": "next",
     "@palladium-ethiopia/esm-appointments-admin-app": "next",
-    "@palladium-ethiopia/esm-appointments-quota-app": "next"
+    "@palladium-ethiopia/esm-appointments-quota-app": "next",
+    "@palladium-ethiopia/esm-orders-admin-app": "next"
   },
   "spaPath": "/openmrs/spa",
   "apiUrl": "/openmrs",

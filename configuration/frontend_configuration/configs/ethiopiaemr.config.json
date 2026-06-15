@@ -188,6 +188,7 @@
     "careSettingUuid": "6f0c9a92-6f24-11e3-af88-005056821db0"
   },
   "@palladium-ethiopia/esm-patient-medications-app": {
+    "enableOrderSets": true,
     "maxDispenseDurationInDays": 365,
     "requireIndication": false,
     "dtpResponse": {
