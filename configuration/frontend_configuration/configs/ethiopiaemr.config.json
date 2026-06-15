@@ -157,6 +157,15 @@
         "enabled": true,
         "order": 3,
         "privilege": "Gynecological Triage Access"
+      },
+      {
+        "id": "psychiatry",
+        "formUuid": "fe0f8f4c-98ae-46a6-a882-66e61ef4b500",
+        "name": "Psychiatry Triage",
+        "displayName": "Psychiatry Triage",
+        "enabled": true,
+        "order": 4,
+        "privilege": "Psychiatry Triage Access"
       }
     ],
     "visitTypeUuid": "3371a4d4-f66f-4454-a86d-92c7b3da990c",
